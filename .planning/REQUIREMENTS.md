@@ -15,9 +15,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Card System
 
-- [ ] **CARD-01**: Major Arcana deck (22 cards) with meanings and symbolism
-- [ ] **CARD-02**: Each card has upright meaning (reversed out of scope for MVP)
-- [ ] **CARD-03**: Card data embedded in subagent prompt for portability
+- [x] **CARD-01**: Major Arcana deck (22 cards) with meanings and symbolism
+- [x] **CARD-02**: Each card has upright meaning (reversed out of scope for MVP)
+- [x] **CARD-03**: Card data embedded in subagent prompt for portability
 
 ### Voice System
 
@@ -89,9 +89,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | SKILL-01 | Phase 1 | Complete |
 | SKILL-02 | Phase 1 | Complete |
 | SKILL-03 | Phase 1 | Complete |
-| CARD-01 | Phase 2 | Pending |
-| CARD-02 | Phase 2 | Pending |
-| CARD-03 | Phase 2 | Pending |
+| CARD-01 | Phase 2 | Complete |
+| CARD-02 | Phase 2 | Complete |
+| CARD-03 | Phase 2 | Complete |
 | VOICE-01 | Phase 3 | Pending |
 | VOICE-02 | Phase 3 | Pending |
 | VOICE-03 | Phase 3 | Pending |
@@ -107,4 +107,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2025-01-21*
-*Last updated: 2026-01-22 after Phase 1 completion*
+*Last updated: 2026-01-22 after Phase 2 completion*
