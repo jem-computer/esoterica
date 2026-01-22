@@ -1,24 +1,24 @@
 # State: Esoterica
 
-**Current Phase:** Ready for next milestone
-**Status:** v1.0 shipped
-**Last activity:** 2026-01-22 - Milestone v1.0 complete
+**Current Phase:** Defining requirements
+**Status:** v1.1 milestone started
+**Last activity:** 2026-01-22 - v1.1 scope defined
 
 ## Current Position
 
-Milestone: v1.0 complete
-Phase: Ready for v2 planning
-Status: Between milestones
-Last activity: 2026-01-22 - v1.0 shipped
+Milestone: v1.1 Wizard UI
+Phase: Not started (defining requirements)
+Status: Defining requirements
+Last activity: 2026-01-22 — v1.1 milestone started
 
-Progress: v1.0 ██████████ 100% SHIPPED
+Progress: v1.1 ░░░░░░░░░░ 0%
 
 ## Project Reference
 
 See: .planning/PROJECT.md (updated 2026-01-22)
 
 **Core value:** Agents can draw and interpret tarot cards as a perspective-shifting tool
-**Current focus:** Planning next milestone (v1.1 or v2.0)
+**Current focus:** v1.1 Wizard UI — interactive flow with spreads
 
 ## Milestone Summary
 

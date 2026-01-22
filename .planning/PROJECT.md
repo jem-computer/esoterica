@@ -8,6 +8,19 @@ A framework for Claude Code agents to use tarot (and eventually other esoteric t
 
 Agents can draw and interpret tarot cards as a perspective-shifting tool for problem-solving, planning, and self-mythologizing.
 
+## Current Milestone: v1.1 Wizard UI
+
+**Goal:** Replace inline args with interactive wizard flow using AskUserQuestion, add spread selection and physical reading mode.
+
+**Target features:**
+- Wizard UI with tabbed questions
+- Spread options: single card, Problem/Solution/Synthesis, LLM-suggested, custom
+- Digital vs Physical reading mode
+- Physical mode lets user enter cards they drew from real deck
+- Multi-card interpretation engine
+
+---
+
 ## Current State (v1.0 Shipped)
 
 **Shipped:** 2026-01-22
@@ -41,7 +54,12 @@ Agents can draw and interpret tarot cards as a perspective-shifting tool for pro
 
 ### Active
 
-(Define in next milestone with `/gsd:new-milestone`)
+**v1.1 Wizard UI & Spreads:**
+- [ ] Wizard flow replaces inline args (`/tarot` launches AskUserQuestion)
+- [ ] Spread selection: single card, 3-card (Problem/Solution/Synthesis), LLM-suggested, custom
+- [ ] Digital vs Physical reading mode
+- [ ] Physical mode: user enters cards they drew
+- [ ] Multi-card interpretation (3-card spreads)
 
 ### Out of Scope
 
@@ -82,4 +100,4 @@ Agents can draw and interpret tarot cards as a perspective-shifting tool for pro
 | Safe config parsing | grep+cut only (no eval/source), validates values | ✓ Good — no security concerns |
 
 ---
-*Last updated: 2026-01-22 after v1.0 milestone*
+*Last updated: 2026-01-22 — v1.1 milestone started*
