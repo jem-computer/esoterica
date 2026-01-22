@@ -106,8 +106,49 @@ If user selected "Situation/Action/Outcome":
 
 ### Claude Suggests Spread
 If user selected "Claude suggests":
-- (Implemented in Phase 7 Plan 02)
-- For now: Fall back to single-card reading with note that this will be implemented
+
+1. **Generate contextual positions** based on the user's question from wizard Question 1:
+   - Review what the user shared about their question or situation
+   - Generate exactly 3 position names that illuminate their specific context
+   - Position names should be:
+     * Specific to their context (not generic like "Past/Present/Future")
+     * Actionable or insightful (help them see something new)
+     * Concise (2-4 words each)
+
+   **Example quality:**
+   User asks about refactoring authentication:
+   - Current State
+   - Hidden Complexity
+   - Path Forward
+
+   User asks about a difficult conversation:
+   - What's Unspoken
+   - Your Leverage
+   - Bridge to Build
+
+2. **Present for approval:**
+   "Based on your question, I suggest these three positions:
+
+   1. **[Position 1]**
+   2. **[Position 2]**
+   3. **[Position 3]**
+
+   Shall I proceed with these positions, or would you like me to suggest different ones?"
+
+3. **Handle response:**
+   - If user approves: Show position preview and draw 3 unique cards with `!shuf -i 0-21 -n 3`
+   - If user requests different positions: Generate new positions (return to step 1)
+   - Do NOT fall back to custom input - keep generating until user approves
+
+4. **After approval, show preview and draw:**
+   "You'll draw three cards for:
+   1. **[Approved Position 1]**
+   2. **[Approved Position 2]**
+   3. **[Approved Position 3]**
+
+   Drawing cards now..."
+
+   Then draw: `!shuf -i 0-21 -n 3`
 
 ### Custom Spread
 If user selected "Custom":
