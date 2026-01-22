@@ -79,9 +79,13 @@ Proceed to perform the reading using the collected question/context.
 
 **Card drawn:** `!shuf -i 0-21 -n 1`
 
-**Voice:** `!VOICE=$(echo "$ARGUMENTS" | grep -oiE '\-\-voice\s+(mystic|grounded)' | awk '{print tolower($2)}'); if [ -n "$VOICE" ]; then echo "$VOICE"; else VOICE=$(grep -E '^voice=(mystic|grounded)$' .tarot 2>/dev/null | cut -d= -f2); if [ -z "$VOICE" ]; then VOICE=$(grep -E '^voice=(mystic|grounded)$' "$HOME/.claude/tarot/config" 2>/dev/null | cut -d= -f2); fi; if [ -n "$VOICE" ]; then echo "$VOICE"; else echo "grounded"; fi; fi`
+**Voice:** `!VOICE=$(grep -E '^voice=(mystic|grounded)$' .tarot 2>/dev/null | cut -d= -f2); if [ -z "$VOICE" ]; then VOICE=$(grep -E '^voice=(mystic|grounded)$' "$HOME/.claude/tarot/config" 2>/dev/null | cut -d= -f2); fi; if [ -n "$VOICE" ]; then echo "$VOICE"; else echo "grounded"; fi`
 
-**Question/Context:** `!echo "$ARGUMENTS" | sed -E 's/--voice\s*(mystic|grounded)//gi' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | grep -q . && echo "$ARGUMENTS" | sed -E 's/--voice\s*(mystic|grounded)//gi' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' || echo "(no specific question - interpret based on session context)"`
+**Question/Context:** (collected via wizard - use the user's response to Question 1)
+
+**Spread:** (collected via wizard - use the user's response to Question 2; for Phase 6, always perform single-card reading)
+
+**Mode:** (collected via wizard - use the user's response to Question 3; for Phase 6, always use digital random draw)
 
 ## Major Arcana Meanings
 
