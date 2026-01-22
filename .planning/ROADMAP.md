@@ -79,10 +79,10 @@ Plans:
 
 **Requirements covered:** VOICE-01, VOICE-02, VOICE-03
 
-**Plans:** (created by /gsd:plan-phase)
+**Plans:** 1 plan
 
 Plans:
-- [ ] TBD — Plan details will be created during phase planning
+- [ ] 03-01-PLAN.md — Add Mystic and Grounded voice definitions with examples and consistency instructions
 
 **Deliverables:**
 - [ ] Mystic voice prompt section (evocative, archetypal, witchy language)
@@ -167,4 +167,4 @@ Plans:
 
 ---
 *Roadmap created: 2025-01-21*
-*Last updated: 2026-01-22 after Phase 2 completion*
+*Last updated: 2026-01-22 after Phase 3 planning*
