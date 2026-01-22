@@ -21,9 +21,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Voice System
 
-- [ ] **VOICE-01**: Mystic voice available (witchy, evocative, archetypal language)
-- [ ] **VOICE-02**: Grounded voice available (practical, direct archetypal interpretation)
-- [ ] **VOICE-03**: Voice is interpretive lens, not persona change (maintains technical competence)
+- [x] **VOICE-01**: Mystic voice available (witchy, evocative, archetypal language)
+- [x] **VOICE-02**: Grounded voice available (practical, direct archetypal interpretation)
+- [x] **VOICE-03**: Voice is interpretive lens, not persona change (maintains technical competence)
 
 ### Configuration
 
@@ -92,9 +92,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CARD-01 | Phase 2 | Complete |
 | CARD-02 | Phase 2 | Complete |
 | CARD-03 | Phase 2 | Complete |
-| VOICE-01 | Phase 3 | Pending |
-| VOICE-02 | Phase 3 | Pending |
-| VOICE-03 | Phase 3 | Pending |
+| VOICE-01 | Phase 3 | Complete |
+| VOICE-02 | Phase 3 | Complete |
+| VOICE-03 | Phase 3 | Complete |
 | CONFIG-01 | Phase 4 | Pending |
 | CONFIG-02 | Phase 4 | Pending |
 | INVOKE-01 | Phase 5 | Pending |
@@ -107,4 +107,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2025-01-21*
-*Last updated: 2026-01-22 after Phase 2 completion*
+*Last updated: 2026-01-22 after Phase 3 completion*

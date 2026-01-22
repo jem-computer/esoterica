@@ -73,27 +73,29 @@ Plans:
 
 ---
 
-## Phase 3: Voice System
+## Phase 3: Voice System ✓
 
 **Goal:** Two interpretive voices - Mystic and Grounded
+
+**Status:** Complete (2026-01-22)
 
 **Requirements covered:** VOICE-01, VOICE-02, VOICE-03
 
 **Plans:** 1 plan
 
 Plans:
-- [ ] 03-01-PLAN.md — Add Mystic and Grounded voice definitions with examples and consistency instructions
+- [x] 03-01-PLAN.md — Add Mystic and Grounded voice definitions with examples and consistency instructions
 
 **Deliverables:**
-- [ ] Mystic voice prompt section (evocative, archetypal, witchy language)
-- [ ] Grounded voice prompt section (practical, direct, archetypal)
-- [ ] Voice selection integrated into subagent prompt
-- [ ] Both voices maintain technical competence
+- [x] Mystic voice prompt section (evocative, archetypal, witchy language)
+- [x] Grounded voice prompt section (practical, direct, archetypal)
+- [x] Voice selection integrated into subagent prompt (`--voice` flag)
+- [x] Both voices maintain technical competence
 
 **Success criteria:**
-- Same card with Mystic voice sounds different than Grounded
-- Neither voice loses ability to discuss technical topics
-- Voice is tone/framing, not persona change
+- Same card with Mystic voice sounds different than Grounded ✓
+- Neither voice loses ability to discuss technical topics ✓
+- Voice is tone/framing, not persona change ✓
 
 **Dependencies:** Phase 2 (cards to interpret)
 
@@ -167,4 +169,4 @@ Plans:
 
 ---
 *Roadmap created: 2025-01-21*
-*Last updated: 2026-01-22 after Phase 3 planning*
+*Last updated: 2026-01-22 after Phase 3 completion*

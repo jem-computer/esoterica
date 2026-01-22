@@ -1,24 +1,24 @@
 # State: Esoterica
 
-**Current Phase:** Phase 2 - Card System (2 of 5)
-**Status:** Phase 2 complete
-**Last activity:** 2026-01-22 - Phase 2 verified and complete
+**Current Phase:** Phase 3 - Voice System (3 of 5)
+**Status:** Phase 3 complete
+**Last activity:** 2026-01-22 - Phase 3 verified and complete
 
 ## Current Position
 
-Phase: 2 of 5 (Card System)
+Phase: 3 of 5 (Voice System)
 Plan: 1 of 1 in phase
-Status: Phase 2 plan complete
-Last activity: 2026-01-22 - Completed 02-01-PLAN.md (major-arcana-meanings)
+Status: Phase 3 complete
+Last activity: 2026-01-22 - Completed 03-01-PLAN.md (voice-system)
 
-Progress: ██░░░░░░░░ 40% (2/5 phases)
+Progress: ██████░░░░ 60% (3/5 phases)
 
 ## Project Reference
 
 See: .planning/PROJECT.md (updated 2025-01-21)
 
 **Core value:** Agents can draw and interpret tarot cards as a perspective-shifting tool
-**Current focus:** Phase 3 - Voice System
+**Current focus:** Phase 4 - Configuration
 
 ## Phase Status
 
@@ -26,7 +26,7 @@ See: .planning/PROJECT.md (updated 2025-01-21)
 |-------|------|--------|----------------|
 | 1 | Skill Infrastructure | ✓ Complete | 1/1 |
 | 2 | Card System | ✓ Complete | 1/1 |
-| 3 | Voice System | Not Started | 0/? |
+| 3 | Voice System | ✓ Complete | 1/1 |
 | 4 | Configuration | Not Started | 0/? |
 | 5 | Polish & Integration | Not Started | 0/? |
 
@@ -56,6 +56,20 @@ See: .planning/PROJECT.md (updated 2025-01-21)
 **Key Files:**
 - `skills/tarot/SKILL.md` - Updated with complete Major Arcana meanings
 
+## Phase 3 Summary
+
+**Completed:** 2026-01-22
+
+**Deliverables:**
+- ✓ Mystic voice (techno-mystic cosmic priestess, "we/one" pronouns, cosmic-earth metaphors)
+- ✓ Grounded voice (pragmatic advisor, direct "you", actionable language)
+- ✓ Voice examples (The Tower in both voices with technical context)
+- ✓ Voice consistency instructions (maintain voice throughout, including technical topics)
+- ✓ `--voice` flag parsing for immediate voice selection
+
+**Key Files:**
+- `skills/tarot/SKILL.md` - Voice system, examples, argument parsing
+
 ## Accumulated Decisions
 
 Decisions made during execution that affect future work:
@@ -70,6 +84,9 @@ Decisions made during execution that affect future work:
 | 4-section card structure | 02-01 | Card definitions | Themes/Situations/Shadows/Symbols for each card |
 | Subagent as tarot reader | 02-01 | Interpretation | Directs subagent to interpret FOR user, not provide lookup |
 | Archetypal language | 02-01 | Card meanings | Enables contextual connections to diverse situations |
+| Voice as lens not persona | 03-01 | Voice system | Both voices interpret same cards, just frame differently |
+| --voice flag for selection | 03-01 | Argument parsing | Enables immediate voice choice; config default deferred to Phase 4 |
+| Grounded as default | 03-01 | Voice default | Less alienating for skeptics; can override with --voice mystic |
 
 ## Recent Activity
 
@@ -88,20 +105,25 @@ Decisions made during execution that affect future work:
 - 2026-01-22: Phase 2 plan 01 checkpoint approved by user
 - 2026-01-22: Phase 2 plan 01 completed (02-01-SUMMARY.md)
 - 2026-01-22: Phase 2 verified and complete
+- 2026-01-22: Phase 3 plan 01 executed (task 1 committed: 03e9817)
+- 2026-01-22: Phase 3 voice argument parsing fixed (committed: 765dc2e)
+- 2026-01-22: Phase 3 plan 01 checkpoint approved by user
+- 2026-01-22: Phase 3 plan 01 completed (03-01-SUMMARY.md)
+- 2026-01-22: Phase 3 verified and complete
 
 ## Session Continuity
 
-Last session: 2026-01-22 07:28 UTC
-Stopped at: Completed Phase 2 Plan 01 (major-arcana-meanings)
+Last session: 2026-01-22
+Stopped at: Completed Phase 3 (Voice System)
 Resume file: None
 
 ## Next Steps
 
-1. Plan Phase 3: Voice System
-   - Implement Mystic (witchy) and Grounded (practical) voices
-   - Add voice-specific interpretation styles
-   - Handle voice selection and switching
-2. Execute Phase 3
+1. Plan Phase 4: Configuration
+   - Implement persistent voice preference
+   - Config location (~/.claude/ or project-level)
+   - Skill reads config on invocation
+2. Execute Phase 4
 3. Continue through remaining phases
 
 ## Blockers/Concerns
@@ -116,4 +138,4 @@ None currently. Phases 1-2 complete, ready to proceed.
 - Skill pattern established: frontmatter + shell injection + forked context
 
 ---
-*Last updated: 2026-01-22 after completing Phase 2*
+*Last updated: 2026-01-22 after completing Phase 3*
