@@ -32,7 +32,7 @@ Phase 8: Reading Modes          -> Digital vs physical card selection
 Phase 9: Multi-Card Interpretation -> Position-aware multi-card readings
 ```
 
-- [ ] **Phase 6: Wizard Infrastructure** - AskUserQuestion wizard replaces inline args
+- [x] **Phase 6: Wizard Infrastructure** - AskUserQuestion wizard replaces inline args
 - [ ] **Phase 7: Spread Options** - Four spread types available in wizard
 - [ ] **Phase 8: Reading Modes** - Digital and physical reading modes
 - [ ] **Phase 9: Multi-Card Interpretation** - Position-aware interpretation engine
@@ -53,7 +53,7 @@ Phase 9: Multi-Card Interpretation -> Position-aware multi-card readings
 **Plans**: 1 plan
 
 Plans:
-- [ ] 06-01-PLAN.md — Add AskUserQuestion wizard, remove context fork, update reading flow
+- [x] 06-01-PLAN.md — Add AskUserQuestion wizard, remove context fork, update reading flow
 
 ---
 
@@ -120,11 +120,11 @@ Plans:
 | 3. Voice System | v1.0 | 1/1 | Complete | 2026-01-22 |
 | 4. Configuration | v1.0 | 1/1 | Complete | 2026-01-22 |
 | 5. Polish & Integration | v1.0 | 1/1 | Complete | 2026-01-22 |
-| 6. Wizard Infrastructure | v1.1 | 0/1 | Planned | - |
+| 6. Wizard Infrastructure | v1.1 | 1/1 | Complete | 2026-01-22 |
 | 7. Spread Options | v1.1 | 0/1 | Not started | - |
 | 8. Reading Modes | v1.1 | 0/1 | Not started | - |
 | 9. Multi-Card Interpretation | v1.1 | 0/1 | Not started | - |
 
 ---
 *Roadmap created: 2026-01-22*
-*Last updated: 2026-01-22 - Phase 6 planned*
+*Last updated: 2026-01-22 - Phase 6 complete*

@@ -49,7 +49,9 @@ v1.0 validated decisions carry forward (with Phase 6 modification):
 
 ### Pending Todos
 
-None yet.
+- [ ] Add a v1 README to the repo
+- [ ] Write a snappy tagline for the project / for the github repo
+- [ ] Make an MVP landing page
 
 ### Blockers/Concerns
 
