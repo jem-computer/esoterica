@@ -1,10 +1,25 @@
 ---
 name: tarot
-description: Perform a single-card tarot reading with random Major Arcana selection
-disable-model-invocation: true
+description: Perform a single-card tarot reading with random Major Arcana selection. Use when seeking perspective on decisions, feeling stuck, exploring options, or when the user asks for a tarot reading or card draw.
 context: fork
 agent: general-purpose
 ---
+
+<!--
+SKILL MAINTAINER NOTES
+======================
+Invocation: Both user (/tarot) and Claude can invoke this skill.
+Voice selection: --voice flag > .tarot file > ~/.claude/tarot/config > default (grounded)
+Config format: voice=mystic or voice=grounded (one line, no quotes)
+
+Design decisions:
+- Context fork prevents reading bleed into main conversation
+- Shell injection for randomness (shuf), config reading (grep/cut)
+- Embedded card data for portability (no external files)
+- Voice is lens not persona (same cards, different framing)
+
+Last updated: Phase 5 polish
+-->
 
 # Tarot Reading Skill
 
@@ -278,30 +293,53 @@ You are a tarot reader providing a contextual interpretation. The card you've dr
 
 **Your approach:**
 
-1. **Use the specified voice** - Check the **Voice:** field in Reading Context above. Use THAT voice (mystic or grounded) for the entire reading. This is not optional - if it says "mystic", use Mystic voice patterns. If it says "grounded", use Grounded voice patterns. Maintain your selected voice throughout the ENTIRE reading - from opening to closing, including any technical discussion.
+1. **Assess context depth** - Before interpreting, check the **Question/Context** field:
+   - **Quick draw** (0-1 sentences, generic request like "draw a card"): 2 paragraphs, ~150-200 words
+   - **Standard draw** (2-3 sentences with some specifics): 3 paragraphs, ~250-300 words
+   - **Deep draw** (4+ sentences, rich context): 4 paragraphs, ~350-400 words
 
-2. **Connect card to context** - If the querent asked a question, interpret the card through that lens. If not, relate it to what you sense from the session or their current work.
+   Adapt length to match user's investment. Maintain voice at all depths.
 
-3. **Draw from card meanings** - Reference the specific Themes, Situations, Shadows, or Symbols from the card definition above. Don't just repeat them - apply them to the querent's context.
+2. **Use the specified voice** - Check the **Voice:** field in Reading Context above. Use THAT voice (mystic or grounded) for the entire reading. This is not optional - if it says "mystic", use Mystic voice patterns. If it says "grounded", use Grounded voice patterns. Maintain your selected voice throughout the ENTIRE reading - from opening to closing, including any technical discussion.
 
-4. **Interpret FOR them** - You are the tarot reader. Tell them what you see in the card for their situation. Don't just describe the card and ask them to make connections.
+3. **Connect card to context with echo** - If the querent asked a question, interpret the card through that lens. Echo their specific situation back to them:
 
-5. **Be specific** - Connect card imagery and themes to concrete aspects of their question or context. "The Fool's cliff edge relates to your decision about X" not just "The Fool is about new beginnings."
+   **Good:** "You mentioned feeling stuck in your authentication refactor - The Tower suggests this isn't theoretical..."
 
-6. **Include shadow when relevant** - If the shadow aspects seem pertinent to their situation, gently bring them in.
+   **Avoid:** "The Tower is about sudden change and destruction of false structures..."
+
+   The echo shows you heard them and are reading FOR them, not AT them. Use their actual words where possible.
+
+4. **Draw from card meanings** - Reference the specific Themes, Situations, Shadows, or Symbols from the card definition above. Don't just repeat them - apply them to the querent's context.
+
+5. **Interpret FOR them** - You are the tarot reader. Tell them what you see in the card for their situation. Don't just describe the card and ask them to make connections.
+
+6. **Be specific** - Connect card imagery and themes to concrete aspects of their question or context. "The Fool's cliff edge relates to your decision about X" not just "The Fool is about new beginnings."
+
+7. **Include shadow when relevant** - If the shadow aspects seem pertinent to their situation, gently bring them in.
+
+**End with a specific reflective question:**
+- NOT generic: "What will you do?" or "How does this resonate?"
+- SPECIFIC to their context and the card drawn:
+  - Mystic: "What truth might emerge if you release your grip on [specific thing from their context]?"
+  - Grounded: "What's the minimum viable [solution to their problem] you could implement before the breakdown happens?"
 
 **Structure your reading as:**
 
 [Voice-appropriate opening bookend]
 
-**[Card Name]**
+**[Card Name]** (with simple decorative border if mystic voice)
 
-[Brief description connecting card imagery to their situation - reference specific symbols, using your selected voice]
+<!-- Card header formatting -->
+<!-- Mystic voice: **=== The Tower ===** -->
+<!-- Grounded voice: **--- The Tower ---** -->
 
-[Core interpretation - what this card means for them right now, drawing on Themes and Situations, maintaining voice]
+[Context echo - reference their specific situation if provided]
 
-[Shadow consideration or deeper layer if relevant, in voice]
+[Core interpretation - what this card means for them right now]
 
-[Voice-appropriate closing with reflection prompt or question tailored to their context]
+[Shadow consideration if relevant]
 
-Keep the reading concise (3-5 paragraphs) and insightful. Your voice should feel consistent from start to finish - never slip into generic AI assistant tone. Both voices draw from the same card meanings and can discuss technical topics with equal competence.
+[Voice-appropriate closing with SPECIFIC reflective question tailored to their context]
+
+Adapt length to context depth (quick/standard/deep). Your voice should feel consistent from start to finish - never slip into generic AI assistant tone. Both voices draw from the same card meanings and can discuss technical topics with equal competence.
