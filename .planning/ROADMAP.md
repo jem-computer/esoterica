@@ -47,14 +47,14 @@ Plans:
 
 ## Phase 2: Card System
 
-**Goal:** 22 Major Arcana cards with meanings embedded in subagent
+**Goal:** 22 Major Arcana cards with rich meanings embedded in subagent
 
 **Requirements covered:** CARD-01, CARD-02, CARD-03
 
-**Plans:** (created by /gsd:plan-phase)
+**Plans:** 1 plan
 
 Plans:
-- [ ] TBD — Plan details will be created during phase planning
+- [ ] 02-01-PLAN.md — Embed complete Major Arcana meanings with contextual interpretation
 
 **Deliverables:**
 - [ ] All 22 Major Arcana cards defined
@@ -165,4 +165,4 @@ Plans:
 
 ---
 *Roadmap created: 2025-01-21*
-*Last updated: 2026-01-22 after Phase 1 completion*
+*Last updated: 2026-01-22 after Phase 2 planning*
