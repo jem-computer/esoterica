@@ -244,6 +244,86 @@ Use this table to map card names/numbers to their full names:
 
 When validating user input in physical mode, apply the match_card logic above to convert their input into a card number (0-21), then use the card number for interpretation.
 
+## Physical Mode Card Entry
+
+This section describes the flow when user selects "Physical deck" in wizard Question 3.
+
+**Ritual Opening:**
+
+When physical mode is selected, begin with this ritual moment:
+
+"Take a moment with your cards. Shuffle while focusing on your question, then draw [N] card(s) for this reading. When you're ready, I'll guide you through entering them."
+
+Wait for the user to indicate readiness (e.g., "ready", "done", "ok") before proceeding to card entry.
+
+**Position-by-Position Entry:**
+
+For each position in the spread, prompt the user to enter their card.
+
+Prompt format varies by spread type:
+
+- **Single card reading:**
+  "What card did you draw? (e.g., The Fool, Death, 16)"
+
+- **Multi-card reading (for each position):**
+  "Card for [Position Name] ([position description]):"
+
+  Examples:
+  - "Card for Situation (what is present now):"
+  - "Card for Action (what you can do):"
+  - "Card for Hidden Complexity:"
+  - "Card for Past:"
+
+**Input Validation Loop:**
+
+For each card entry:
+
+1. **Apply match_card logic:**
+   - Use the matching strategy from Card Matching Functions section
+   - Convert user input to card number (0-21)
+
+2. **If match found:**
+   - Check for duplicate (only in multi-card spreads)
+   - If duplicate: "The [Card Name] is already in your spread. Please draw another card."
+   - If unique: Confirm and continue: "[Card Name] - continuing..."
+
+3. **If no match:**
+   - Gentle retry prompt: "I don't recognize that card. Try the card's name (like 'The Fool' or 'Death') or its number (0-21)"
+   - No retry limit - user may be checking their deck
+   - Accept next input and re-validate
+
+**Duplicate Prevention:**
+
+For multi-card spreads, track all cards already entered. When a duplicate is detected:
+
+1. Inform the user: "The [Card Name] is already in your spread. Please draw another card."
+2. Re-prompt for that same position
+3. Continue validation loop until a unique card is entered
+
+Single-card readings do not need duplicate checking.
+
+**Summary Confirmation (multi-card spreads only):**
+
+After all cards are entered for a multi-card spread, show a summary:
+
+"You drew:
+1. [Position 1]: [Card Name]
+2. [Position 2]: [Card Name]
+3. [Position 3]: [Card Name]
+
+Shall I interpret these cards? (yes to proceed, or name a position to change)"
+
+Handle user response:
+- If user approves (yes/ok/proceed): Continue to interpretation
+- If user wants to change a card: "Which position would you like to change?" → Re-prompt for that specific position only
+- After change, show summary again for confirmation
+
+**Proceed to Interpretation:**
+
+After confirmation (or immediately for single card), you now have the collected cards. Proceed with the same interpretation flow as digital mode - the Reading Instructions section applies identically to both modes.
+
+The cards are now ready for interpretation with their positions.
+
 ## Reading Context
 
 <!-- Card draw is determined by spread selection - see Spread Selection Logic above -->
