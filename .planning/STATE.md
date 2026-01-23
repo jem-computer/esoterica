@@ -75,6 +75,7 @@ v1.0 validated decisions carry forward (with Phase 6 modification):
 - [ ] Add a v1 README to the repo
 - [ ] Write a snappy tagline for the project / for the github repo
 - [ ] Make an MVP landing page
+- [ ] Let users save readings to file (see .planning/todos/pending/)
 
 ### Blockers/Concerns
 
