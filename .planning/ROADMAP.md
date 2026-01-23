@@ -86,10 +86,10 @@ Plans:
   2. Physical mode prompts user to enter cards they drew from real deck
   3. Physical mode accepts card names ("The Tower") or numbers (16)
   4. Both modes work with any spread type (1 card or multiple)
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 08-01: Implement mode selection and physical card input
+- [ ] 08-01-PLAN.md - Card matching infrastructure, physical mode entry flow, mode dispatch
 
 ---
 
