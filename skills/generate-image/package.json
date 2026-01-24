@@ -1,0 +1,28 @@
+{
+  "name": "@esoterica/generate-image",
+  "version": "1.0.0",
+  "description": "Generate images using Replicate's Nano Banana Pro model with Esoterica's eco-futurist aesthetic",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "esoterica",
+    "image-generation",
+    "replicate",
+    "ai"
+  ],
+  "author": "Esoterica",
+  "license": "MIT",
+  "dependencies": {
+    "replicate": "^1.0.0",
+    "sharp": "^0.33.0",
+    "get-image-colors": "^4.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
