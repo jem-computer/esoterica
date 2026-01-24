@@ -81,28 +81,28 @@ Deferred to later milestones:
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| DOC-01 | TBD | Pending |
-| DOC-02 | TBD | Pending |
-| DOC-03 | TBD | Pending |
-| POS-01 | TBD | Pending |
-| POS-02 | TBD | Pending |
-| POS-03 | TBD | Pending |
-| LAND-01 | TBD | Pending |
-| LAND-02 | TBD | Pending |
-| LAND-03 | TBD | Pending |
-| VIS-01 | TBD | Pending |
-| VIS-02 | TBD | Pending |
-| VIS-03 | TBD | Pending |
-| LAUNCH-01 | TBD | Pending |
-| LAUNCH-02 | TBD | Pending |
-| LAUNCH-03 | TBD | Pending |
-| LAUNCH-04 | TBD | Pending |
+| POS-01 | Phase 10 | Pending |
+| POS-02 | Phase 10 | Pending |
+| POS-03 | Phase 10 | Pending |
+| DOC-01 | Phase 11 | Pending |
+| DOC-02 | Phase 11 | Pending |
+| DOC-03 | Phase 11 | Pending |
+| VIS-01 | Phase 12 | Pending |
+| VIS-02 | Phase 12 | Pending |
+| VIS-03 | Phase 12 | Pending |
+| LAND-01 | Phase 13 | Pending |
+| LAND-02 | Phase 13 | Pending |
+| LAND-03 | Phase 13 | Pending |
+| LAUNCH-01 | Phase 14 | Pending |
+| LAUNCH-02 | Phase 14 | Pending |
+| LAUNCH-03 | Phase 14 | Pending |
+| LAUNCH-04 | Phase 14 | Pending |
 
 **Coverage:**
-- v1.2 requirements: 14 total
-- Mapped to phases: 0 (pending roadmap)
-- Unmapped: 14
+- v1.2 requirements: 16 total
+- Mapped to phases: 16/16 (100%)
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-01-23*
-*Last updated: 2026-01-23 after milestone initialization*
+*Last updated: 2026-01-23 after roadmap creation (all requirements mapped)*

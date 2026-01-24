@@ -5,17 +5,17 @@
 See: .planning/PROJECT.md (updated 2026-01-23)
 
 **Core value:** Agents can draw and interpret tarot cards as a perspective-shifting tool
-**Current focus:** v1.2 Brand & Marketing
+**Current focus:** v1.2 Brand & Marketing - Phase 10 (Positioning)
 
 ## Current Position
 
 Milestone: v1.2 Brand & Marketing
-Phase: Not started (defining requirements)
-Plan: —
-Status: Defining requirements
-Last activity: 2026-01-23 - Milestone v1.2 started
+Phase: 10 of 14 (Positioning)
+Plan: Not yet planned
+Status: Ready to plan
+Last activity: 2026-01-23 - Roadmap created for v1.2 milestone
 
-Progress: Defining requirements
+Progress: [██████████░░░░░░░░░░] 64% (9/14 phases complete across all milestones)
 
 ## Performance Metrics
 
@@ -42,11 +42,7 @@ All decisions logged in PROJECT.md Key Decisions table.
 
 ### Pending Todos
 
-- [ ] Add a v1 README to the repo
-- [ ] Write a snappy tagline for the project
-- [ ] Make an MVP landing page
 - [ ] Let users save readings to file
-- [ ] Brand positioning and marketing milestone
 - [ ] Debug ugly argument parsing in Skill
 - [ ] Split tarot card descriptions from main skill
 - [ ] Explore subagent benefits for tarot skill
@@ -59,13 +55,13 @@ None.
 ## Session Continuity
 
 Last session: 2026-01-23
-Stopped at: v1.1 milestone completed and archived
+Stopped at: v1.2 roadmap created (5 phases: Positioning → Documentation → Visual Language → Landing Page → Launch Materials)
 Resume file: None
 
 ## Next Steps
 
-1. Start next milestone with `/gsd:new-milestone`
-2. Or work on pending todos (README, tagline, landing page)
+1. Begin Phase 10 planning with `/gsd:plan-phase 10`
+2. Or review roadmap structure first: `cat .planning/ROADMAP.md`
 
 ---
-*Last updated: 2026-01-23 after v1.1 milestone completion*
+*Last updated: 2026-01-23 after v1.2 roadmap creation*
