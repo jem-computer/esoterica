@@ -47,6 +47,8 @@ All decisions logged in PROJECT.md Key Decisions table.
 - [ ] Split tarot card descriptions from main skill
 - [ ] Explore subagent benefits for tarot skill
 - [ ] Integrate tarot with GSD workflow while keeping independence
+- [ ] Remove .claude-plugin directory (not configured properly)
+- [ ] Add npx installation support (like get-shit-done)
 
 ### Blockers/Concerns
 
