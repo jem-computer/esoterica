@@ -55,8 +55,8 @@ See: `.planning/milestones/v1.1-ROADMAP.md` for full details.
 **Plans**: 2 plans
 
 Plans:
-- [ ] 10-01-PLAN.md — Generate tagline options and name alternatives for user selection
-- [ ] 10-02-PLAN.md — Write positioning documents (statement, audience framing, voice guidelines)
+- [x] 10-01-PLAN.md — Generate tagline options and name alternatives for user selection
+- [x] 10-02-PLAN.md — Write positioning documents (statement, audience framing, voice guidelines)
 
 #### Phase 11: Documentation
 
@@ -72,10 +72,10 @@ Plans:
 3. Documentation voice reflects mystical-but-grounded tone (not dry technical writing)
 4. Terminal examples show wizard flow in action
 
-**Plans**: TBD
+**Plans**: 1 plan
 
 Plans:
-- [ ] 11-01: TBD
+- [ ] 11-01-PLAN.md — Write README with Esoterica voice (tagline, installation, usage, philosophy)
 
 #### Phase 12: Visual Language
 
@@ -119,7 +119,7 @@ Plans:
 
 **Depends on**: Phase 13 (needs landing page and all prior materials)
 
-**Requirements**: LAUNCH-01, LAUNCH-02, LAUNCH-03, LAUNCH-04
+**Requirements**: LAUNCH-01, LAUNCH-02, LAUNCH-04
 
 **Success Criteria** (what must be TRUE):
 1. LinkedIn teaser and announcement posts written
@@ -148,11 +148,11 @@ Plans:
 | 8. Reading Modes | v1.1 | 1/1 | Complete | 2026-01-22 |
 | 9. Multi-Card Interpretation | v1.1 | 1/1 | Complete | 2026-01-22 |
 | 10. Positioning | v1.2 | 2/2 | Complete | 2026-01-24 |
-| 11. Documentation | v1.2 | 0/0 | Not started | - |
+| 11. Documentation | v1.2 | 0/1 | Planned | - |
 | 12. Visual Language | v1.2 | 0/0 | Not started | - |
 | 13. Landing Page | v1.2 | 0/0 | Not started | - |
 | 14. Launch Materials | v1.2 | 0/0 | Not started | - |
 
 ---
 *Roadmap created: 2026-01-22*
-*Last updated: 2026-01-24 - Phase 10 complete*
+*Last updated: 2026-01-24 - Phase 11 planned*
