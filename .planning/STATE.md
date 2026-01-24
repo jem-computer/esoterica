@@ -65,6 +65,7 @@ Complete positioning suite ready for downstream phases:
 - [ ] Integrate tarot with GSD workflow while keeping independence
 - [ ] Remove .claude-plugin directory (not configured properly)
 - [ ] Add npx installation support (like get-shit-done)
+- [ ] Add contribution policy - coven members only (no random PRs)
 
 ### Blockers/Concerns
 
