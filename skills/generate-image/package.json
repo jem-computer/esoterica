@@ -17,12 +17,13 @@
   "author": "Esoterica",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^17.2.3",
+    "get-image-colors": "^4.0.0",
     "replicate": "^1.0.0",
-    "sharp": "^0.33.0",
-    "get-image-colors": "^4.0.0"
+    "sharp": "^0.33.0"
   },
   "devDependencies": {
-    "typescript": "^5.0.0",
-    "@types/node": "^20.0.0"
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
   }
 }

@@ -13,6 +13,25 @@ import { generateImages, HERO_PROMPT_CONFIG } from "../../skills/generate-image/
 import { promises as fs } from "fs";
 import path from "path";
 
+async function loadEnv() {
+  const envPath = path.join(process.cwd(), ".env");
+  try {
+    const envContent = await fs.readFile(envPath, "utf-8");
+    envContent.split("\n").forEach((line) => {
+      const trimmed = line.trim();
+      if (trimmed && !trimmed.startsWith("#")) {
+        const [key, ...valueParts] = trimmed.split("=");
+        const value = valueParts.join("=").trim();
+        if (key && value) {
+          process.env[key.trim()] = value;
+        }
+      }
+    });
+  } catch (error) {
+    console.error("Warning: Could not load .env file:", error);
+  }
+}
+
 interface BatchConfig {
   name: string;
   description: string;
@@ -64,6 +83,9 @@ const batches: BatchConfig[] = [
 ];
 
 async function generateAllBatches() {
+  // Load environment variables from .env
+  await loadEnv();
+
   const outputDir = path.join(process.cwd(), "brand/hero/archive");
   const logPath = path.join(process.cwd(), "brand/hero/GENERATION_LOG.md");
 
