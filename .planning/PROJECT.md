@@ -2,102 +2,107 @@
 
 ## What This Is
 
-A framework for Claude Code agents to use tarot (and eventually other esoteric tools) in their reasoning process. When an agent is stuck on a design decision, exploring options, or needs a fresh perspective, it can draw a card and interpret the problem through that archetypal lens — same as a human engineer pulling a tarot card at her desk while she works.
+A framework for Claude Code agents to use tarot (and eventually other esoteric tools) in their reasoning process. Features an interactive wizard interface for selecting spread types and reading modes, with support for both digital random draws and physical deck entry.
 
 ## Core Value
 
 Agents can draw and interpret tarot cards as a perspective-shifting tool for problem-solving, planning, and self-mythologizing.
 
-## Current Milestone: v1.1 Wizard UI
+## Current State (v1.1 Shipped)
 
-**Goal:** Replace inline args with interactive wizard flow using AskUserQuestion, add spread selection and physical reading mode.
-
-**Target features:**
-- Wizard UI with tabbed questions
-- Spread options: single card, Problem/Solution/Synthesis, LLM-suggested, custom
-- Digital vs Physical reading mode
-- Physical mode lets user enter cards they drew from real deck
-- Multi-card interpretation engine
-
----
-
-## Current State (v1.0 Shipped)
-
-**Shipped:** 2026-01-22
+**Shipped:** 2026-01-23
 
 **What's working:**
-- `/tarot` skill invokes tarot reading with random Major Arcana card
-- 22 cards with rich archetypal meanings (Themes/Situations/Shadows/Symbols)
+- `/tarot` skill with interactive wizard (AskUserQuestion)
+- 22 Major Arcana cards with rich archetypal meanings
 - Two voices: Mystic (cosmic priestess) and Grounded (pragmatic advisor)
-- Voice selection: `--voice flag` > `.tarot` file > `~/.claude/tarot/config` > default (grounded)
-- Claude can self-invoke when contextually appropriate
-- Adaptive output length (quick/standard/deep based on context depth)
-- Context echoing and specific reflective closing questions
+- Four spread types: Single card, Situation/Action/Outcome, LLM-suggested, Custom (1-5 positions)
+- Two reading modes: Digital (random shuf) and Physical (enter cards from real deck)
+- Physical mode with ritual opening, fuzzy card matching, duplicate prevention
+- Multi-card interpretation with woven narratives connecting cards across positions
+- Position-aware interpretation engine with card relationship patterns
 
 **Tech stack:**
-- 345 lines in SKILL.md (single file, all-embedded)
+- 842 lines in SKILL.md (single file, all-embedded)
 - Shell injection for randomness and config reading
-- Context fork for isolated readings
+- AskUserQuestion for interactive wizard flow
 
 ## Requirements
 
 ### Validated
 
+**v1.0:**
 - ✓ `/tarot` skill invokes tarot reading flow — v1.0
-- ✓ Skill spawns tarot-reader subagent for interpretation — v1.0
 - ✓ Major Arcana deck (22 cards) with meanings and symbolism — v1.0
-- ✓ Two reader voices: Mystic (witchy, evocative) and Grounded (practical archetypal) — v1.0
-- ✓ Global config for voice preference (set once, used always) — v1.0
+- ✓ Two reader voices: Mystic and Grounded — v1.0
+- ✓ Global config for voice preference — v1.0
 - ✓ Both user and Claude can invoke a reading — v1.0
-- ✓ Card draw includes "randomness" (bash shuf) — v1.0
-- ✓ Adaptive output (quick/standard/deep draw based on context) — v1.0
+- ✓ Card draw includes randomness (bash shuf) — v1.0
+- ✓ Adaptive output (quick/standard/deep based on context) — v1.0
+
+**v1.1:**
+- ✓ Wizard flow replaces inline args — v1.1
+- ✓ Spread selection: single, 3-card, LLM-suggested, custom — v1.1
+- ✓ Digital vs Physical reading mode — v1.1
+- ✓ Physical mode: user enters cards they drew — v1.1
+- ✓ Multi-card interpretation with position-aware narratives — v1.1
 
 ### Active
 
-**v1.1 Wizard UI & Spreads:**
-- [ ] Wizard flow replaces inline args (`/tarot` launches AskUserQuestion)
-- [ ] Spread selection: single card, 3-card (Problem/Solution/Synthesis), LLM-suggested, custom
-- [ ] Digital vs Physical reading mode
-- [ ] Physical mode: user enters cards they drew
-- [ ] Multi-card interpretation (3-card spreads)
+(None — planning next milestone)
 
 ### Out of Scope
 
 - Minor Arcana (56 cards) — future expansion, v2 candidate
 - Runes, numerology, astrology — future esoteric tools
-- MCP server — keeping architecture simple with skill + subagent
-- Custom user-defined reader personas — ship two voices first, expand later
+- MCP server — skill pattern validated and working well
+- Custom user-defined reader personas — two voices sufficient
 - Reversed card meanings — start with upright only
+- Voice selection in wizard — config-based works well
 
 ## Context
 
-**Claude Code ecosystem:** Skills are prompt expansions invoked via `/command`. Subagents are spawned via Task tool with specific agent types. Global config can live in `~/.claude/` or project-level.
+**Claude Code ecosystem:** Skills are prompt expansions invoked via `/command`. AskUserQuestion enables interactive wizard flows in main context.
 
 **Use cases:**
 - Problem-solving: stuck on architecture? Draw The Tower, see destruction/rebuilding lens
 - Planning: starting a new phase? Draw to set intention/framing
 - Self-mythologizing: Claude narrating its own journey through archetypal language
 - Divinatory: "what energy does this codebase need?" style reflection
+- Brand positioning: the tool eating its own tail (used /tarot to explore branding)
 
 ## Constraints
 
-- **Architecture**: Skill + subagent pattern (no MCP server needed)
-- **Platform**: Claude Code CLI — must work with current skill/subagent mechanisms
-- **Scope**: v1 is tarot Major Arcana; framework should allow future esoteric tools but not over-engineer for them
+- **Architecture**: Skill pattern (no MCP server needed)
+- **Platform**: Claude Code CLI — must work with current skill mechanisms
+- **Scope**: Tarot Major Arcana; framework allows future esoteric tools
 
 ## Key Decisions
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Skill + subagent over MCP | No external data/APIs needed; simpler architecture | ✓ Good — single file, portable |
-| Major Arcana only for MVP | 22 cards is tractable; full 78 adds complexity without core value | ✓ Good — rich enough for v1 |
-| Two voices (Mystic/Grounded) | Accommodates different user preferences without over-customization | ✓ Good — covers spectrum |
-| Global config for voice | Set once, less friction per invocation | ✓ Good — three-tier precedence works well |
-| Context isolation via fork | Prevents reading context bleeding into main session | ✓ Good — clean separation |
-| Embedded card data in prompt | All card knowledge in SKILL.md, no external files | ✓ Good — portable, no dependencies |
-| Voice as lens not persona | Both voices interpret same cards, just frame differently | ✓ Good — maintains technical competence |
-| Grounded as default | Less alienating for skeptics | ✓ Good — welcoming entry point |
-| Safe config parsing | grep+cut only (no eval/source), validates values | ✓ Good — no security concerns |
+| Skill pattern over MCP | No external data/APIs needed; simpler architecture | ✓ Good — single file, portable |
+| Major Arcana only | 22 cards is tractable; full 78 adds complexity without core value | ✓ Good — rich enough |
+| Two voices (Mystic/Grounded) | Accommodates different user preferences | ✓ Good — covers spectrum |
+| Global config for voice | Set once, less friction per invocation | ✓ Good — three-tier precedence |
+| Embedded card data | All card knowledge in SKILL.md, no external files | ✓ Good — portable |
+| Voice as lens not persona | Both voices interpret same cards, just frame differently | ✓ Good — maintains competence |
+| Grounded as default | Less alienating for skeptics | ✓ Good — welcoming entry |
+| Interactive wizard (v1.1) | AskUserQuestion replaces inline args | ✓ Good — better UX |
+| Main context execution (v1.1) | Required for AskUserQuestion | ✓ Good — enables interactivity |
+| Situation/Action/Outcome (v1.1) | Chosen over Past/Present/Future for three-card | ✓ Good — more actionable |
+| Position preview (v1.1) | Show positions before drawing cards | ✓ Good — user confidence |
+| Physical mode ritual (v1.1) | Ritual moment before card entry | ✓ Good — honors practice |
+| Woven narratives (v1.1) | Multi-card as one story, not separate readings | ✓ Good — cohesive interpretation |
+| Position-weaving (v1.1) | Positions as interpretive prompts in prose | ✓ Good — natural flow |
+
+## Pending Todos
+
+- [ ] Add a v1 README to the repo
+- [ ] Write a snappy tagline for the project
+- [ ] Make an MVP landing page
+- [ ] Let users save readings to file
+- [ ] Brand positioning and marketing milestone
 
 ---
-*Last updated: 2026-01-22 — v1.1 milestone started*
+*Last updated: 2026-01-23 after v1.1 milestone*

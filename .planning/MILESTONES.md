@@ -1,5 +1,33 @@
 # Project Milestones: Esoterica
 
+## v1.1 Wizard UI (Shipped: 2026-01-23)
+
+**Delivered:** Interactive wizard flow with spread selection, physical card entry mode, and position-aware multi-card interpretation.
+
+**Phases completed:** 6-9 (5 plans total)
+
+**Key accomplishments:**
+
+- Interactive wizard (AskUserQuestion) replaces inline argument parsing
+- Four spread types: Single card, Situation/Action/Outcome, LLM-suggested, Custom (1-5 positions)
+- Physical mode with ritual opening, fuzzy card matching, duplicate prevention
+- Multi-card interpretation with woven narratives connecting cards across positions
+- Position-aware interpretation engine with card relationship patterns (tension/harmony)
+- Voice-consistent examples for both Mystic and Grounded interpretive styles
+
+**Stats:**
+
+- 1 file modified (SKILL.md)
+- 842 lines in SKILL.md (up from 345 in v1.0)
+- 4 phases, 5 plans, 14 requirements
+- ~5 hours from start to ship (2026-01-22)
+
+**Git range:** `0539c98` → `122a18c`
+
+**What's next:** Brand positioning, README, landing page, or v1.2 features (preset spreads, deck expansion)
+
+---
+
 ## v1.0 Tarot Skill (Shipped: 2026-01-22)
 
 **Delivered:** A working `/tarot` skill for Claude Code agents to draw and interpret Major Arcana cards as a perspective-shifting tool for problem-solving, planning, and self-mythologizing.

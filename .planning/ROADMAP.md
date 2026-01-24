@@ -3,7 +3,7 @@
 ## Milestones
 
 - **v1.0 Tarot Skill** - Phases 1-5 (shipped 2026-01-22)
-- **v1.1 Wizard UI** - Phases 6-9 (complete 2026-01-22)
+- **v1.1 Wizard UI** - Phases 6-9 (shipped 2026-01-23)
 
 ## Phases
 
@@ -21,98 +21,22 @@ See: `.planning/milestones/v1-ROADMAP.md` for full details.
 
 </details>
 
-### v1.1 Wizard UI (Complete)
+<details>
+<summary>v1.1 Wizard UI (Phases 6-9) - SHIPPED 2026-01-23</summary>
 
-**Milestone Goal:** Replace inline args with interactive wizard flow, add spread selection and physical reading mode.
+See: `.planning/milestones/v1.1-ROADMAP.md` for full details.
 
-```
-Phase 6: Wizard Infrastructure  -> AskUserQuestion replaces inline args
-Phase 7: Spread Options         -> Single, 3-card, LLM-suggested, custom
-Phase 8: Reading Modes          -> Digital vs physical card selection
-Phase 9: Multi-Card Interpretation -> Position-aware multi-card readings
-```
+4 phases, 5 plans, 14 requirements delivered:
+- Phase 6: Wizard Infrastructure
+- Phase 7: Spread Options
+- Phase 8: Reading Modes
+- Phase 9: Multi-Card Interpretation
 
-- [x] **Phase 6: Wizard Infrastructure** - AskUserQuestion wizard replaces inline args
-- [x] **Phase 7: Spread Options** - Four spread types available in wizard
-- [x] **Phase 8: Reading Modes** - Digital and physical reading modes
-- [x] **Phase 9: Multi-Card Interpretation** - Position-aware interpretation engine
-
-## Phase Details
-
-### Phase 6: Wizard Infrastructure
-
-**Goal**: `/tarot` launches interactive wizard instead of accepting inline arguments
-**Depends on**: Phase 5 (working skill infrastructure from v1.0)
-**Requirements**: WIZ-01, WIZ-02, WIZ-03, WIZ-04
-**Success Criteria** (what must be TRUE):
-  1. Running `/tarot` opens a tabbed wizard interface (not inline args)
-  2. Tab 1 collects user's question or context for the reading
-  3. Tab 2 presents spread selection (options can be placeholder for now)
-  4. Tab 3 presents mode selection (options can be placeholder for now)
-  5. Completing wizard triggers reading flow with collected inputs
-**Plans**: 1 plan
-
-Plans:
-- [x] 06-01-PLAN.md — Add AskUserQuestion wizard, remove context fork, update reading flow
-
----
-
-### Phase 7: Spread Options
-
-**Goal**: Users can choose from four spread types when requesting a reading
-**Depends on**: Phase 6 (wizard infrastructure)
-**Requirements**: SPREAD-01, SPREAD-02, SPREAD-03, SPREAD-04
-**Success Criteria** (what must be TRUE):
-  1. User can select single card spread (current behavior preserved)
-  2. User can select Situation/Action/Outcome 3-card spread
-  3. User can select "Claude suggests" and LLM generates contextual positions
-  4. User can select custom spread and type their own position names
-  5. Selected spread passes position names to card selection flow
-**Plans**: 2 plans
-
-Plans:
-- [x] 07-01-PLAN.md — Wizard options update, spread dispatch, three-card preset implementation
-- [x] 07-02-PLAN.md — LLM-suggested and custom spread implementations
-
----
-
-### Phase 8: Reading Modes
-
-**Goal**: Users can choose between digital (random) and physical (enter cards) modes
-**Depends on**: Phase 6 (wizard infrastructure)
-**Requirements**: MODE-01, MODE-02, MODE-03
-**Success Criteria** (what must be TRUE):
-  1. Digital mode performs random card selection (current shuf behavior)
-  2. Physical mode prompts user to enter cards they drew from real deck
-  3. Physical mode accepts card names ("The Tower") or numbers (16)
-  4. Both modes work with any spread type (1 card or multiple)
-**Plans**: 1 plan
-
-Plans:
-- [x] 08-01-PLAN.md - Card matching infrastructure, physical mode entry flow, mode dispatch
-
----
-
-### Phase 9: Multi-Card Interpretation
-
-**Goal**: Multi-card spreads produce woven narratives with position-aware interpretation
-**Depends on**: Phase 7 (spreads), Phase 8 (modes)
-**Requirements**: INTERP-01, INTERP-02, INTERP-03
-**Success Criteria** (what must be TRUE):
-  1. Single card interpretation works as before (regression check)
-  2. Multi-card readings connect meaning across positions (not just 3 separate interpretations)
-  3. Position names ("Problem", "Solution", "Synthesis") inform how each card is interpreted
-  4. LLM-suggested and custom position names work with interpretation engine
-**Plans**: 1 plan
-
-Plans:
-- [x] 09-01-PLAN.md — Woven narrative format, position-weaving patterns, card relationships, voice examples
-
----
+</details>
 
 ## Progress
 
-**Execution Order:** 6 -> 7 -> 8 -> 9
+**Execution Order:** 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9
 
 | Phase | Milestone | Plans Complete | Status | Completed |
 |-------|-----------|----------------|--------|-----------|
@@ -128,4 +52,4 @@ Plans:
 
 ---
 *Roadmap created: 2026-01-22*
-*Last updated: 2026-01-22 - Phase 9 complete, v1.1 milestone complete*
+*Last updated: 2026-01-23 - v1.1 milestone archived*
