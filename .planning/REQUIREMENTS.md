@@ -9,9 +9,9 @@ Requirements for Brand & Marketing milestone.
 
 ### Documentation
 
-- [ ] **DOC-01**: README with value proposition, installation, usage examples
-- [ ] **DOC-02**: Voice/tone that reflects the tool (not dry technical docs)
-- [ ] **DOC-03**: Screenshots or examples showing wizard flow
+- [x] **DOC-01**: README with value proposition, installation, usage examples
+- [x] **DOC-02**: Voice/tone that reflects the tool (not dry technical docs)
+- [x] **DOC-03**: Screenshots or examples showing wizard flow
 
 ### Positioning
 
@@ -84,9 +84,9 @@ Deferred to later milestones:
 | POS-01 | Phase 10 | Complete |
 | POS-02 | Phase 10 | Complete |
 | POS-03 | Phase 10 | Complete |
-| DOC-01 | Phase 11 | Pending |
-| DOC-02 | Phase 11 | Pending |
-| DOC-03 | Phase 11 | Pending |
+| DOC-01 | Phase 11 | Complete |
+| DOC-02 | Phase 11 | Complete |
+| DOC-03 | Phase 11 | Complete |
 | VIS-01 | Phase 12 | Pending |
 | VIS-02 | Phase 12 | Pending |
 | VIS-03 | Phase 12 | Pending |

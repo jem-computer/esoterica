@@ -5,14 +5,14 @@
 See: .planning/PROJECT.md (updated 2026-01-23)
 
 **Core value:** Agents can draw and interpret tarot cards as a perspective-shifting tool
-**Current focus:** v1.2 Brand & Marketing - Phase 11 (Documentation)
+**Current focus:** v1.2 Brand & Marketing - Phase 12 (Visual Language)
 
 ## Current Position
 
 Milestone: v1.2 Brand & Marketing
-Phase: 11 of 14 (Documentation)
-Plan: 1 of 1 complete
-Status: Phase complete
+Phase: 12 of 14 (Visual Language)
+Plan: Not yet planned
+Status: Ready to plan
 Last activity: 2026-01-24 - Completed 11-01-PLAN.md (README documentation)
 
 Progress: [████████████░░░░░░░░] 79% (11/14 phases complete across all milestones)
