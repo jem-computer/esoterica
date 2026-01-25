@@ -159,3 +159,48 @@ Generated: 2026-01-24T23:37:05.915Z
 | 1 | 2026-01-25T00:07:15.521Z | hero-2026-01-25T00-07-14-1.png | Candid scene from an eco-futurist utopian divine f... |
 | 2 | 2026-01-25T00:07:52.359Z | hero-2026-01-25T00-07-51-2.png | Candid scene from an eco-futurist utopian divine f... |
 
+
+## Diversity-Focused Variations (Generated: 2026-01-25T00:33:41.191Z)
+
+**Goal:** Address lack of diversity in previous generations
+**Problem:** "Diverse women" prompt resulted in all white women
+**Solution:** Explicit diversity language emphasizing global majority
+**User's favorite:** hero-2026-01-24T23-43-14-3.png (background figures composition)
+
+### Batch 9 - Global Majority Emphasis
+
+**Description:** Background figures composition with MUCH stronger diversity/global-majority emphasis
+
+**Configuration:**
+- Scene: at a sacred altar in a sun-drenched Joshua Tree grove at sunrise, three tarot cards (High Priestess, Justice, Chariot) laid beside a selenite crystal-computer
+- Figures: background_figures (softly blurred)
+- Screen content: 16:9 screen displaying terminal text with mystical symbols
+- Time of day: golden hour sunrise, pink-gold morning light
+- Variations: 8 (different diversity phrasings)
+
+**Diversity Phrasings Tested:**
+
+| # | Variation Name | Diversity Phrase |
+|---|----------------|------------------|
+| 1 | Global Majority Explicit | Women of many ethnicities - Black, South Asian, East Asian, Latina, Indigenous, Middle Eastern, mixed heritage |
+| 2 | Melanin-Rich Focus | Global majority women, melanin-rich and ethnicity-ambiguous beauties representing all continents |
+| 3 | Multiracial Sisterhood | Multiracial sisterhood of Black women, brown women, Asian women, Indigenous women, mixed-race women |
+| 4 | Future California Ecotopia | Future California ecotopia - women of African, Asian, Indigenous, and Latina descent alongside white women |
+| 5 | Continental Origins | Women from Africa, Asia, Latin America, Indigenous Americas, Middle East, Pacific Islands, and Europe |
+| 6 | Melanated Majority | Melanated women of Black, Brown, Asian, Indigenous, and mixed ancestries |
+| 7 | BIPOC Centered | BIPOC women - Black, Indigenous, People of Color with varied skin tones from deep brown to olive to tan |
+| 8 | Skin Tone Spectrum | Women with skin tones ranging from deep ebony to warm mahogany to golden brown to olive to tan, representing global diversity |
+
+**Generated Images:**
+
+| # | Timestamp | Filename | Variation |
+|---|-----------|----------|----------|
+| 1 | 2026-01-25T00:28:50.886Z | hero-2026-01-25T00-28-49-diversity.png | Global Majority Explicit |
+| 2 | 2026-01-25T00:29:27.822Z | hero-2026-01-25T00-29-26-diversity.png | Melanin-Rich Focus |
+| 3 | 2026-01-25T00:30:15.204Z | hero-2026-01-25T00-30-13-diversity.png | Multiracial Sisterhood |
+| 4 | 2026-01-25T00:30:52.234Z | hero-2026-01-25T00-30-50-diversity.png | Future California Ecotopia |
+| 5 | 2026-01-25T00:31:39.521Z | hero-2026-01-25T00-31-38-diversity.png | Continental Origins |
+| 6 | 2026-01-25T00:32:16.431Z | hero-2026-01-25T00-32-15-diversity.png | Melanated Majority |
+| 7 | 2026-01-25T00:33:03.936Z | hero-2026-01-25T00-33-02-diversity.png | BIPOC Centered |
+| 8 | 2026-01-25T00:33:41.190Z | hero-2026-01-25T00-33-39-diversity.png | Skin Tone Spectrum |
+
