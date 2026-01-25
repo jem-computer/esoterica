@@ -11,19 +11,19 @@ See: .planning/PROJECT.md (updated 2026-01-23)
 
 Milestone: v1.2 Brand & Marketing
 Phase: 12 of 14 (Visual Language)
-Plan: 03 of 03
+Plan: 04 of 04
 Status: Phase complete
-Last activity: 2026-01-24 - Completed 12-03-PLAN.md (social media & favicon assets)
+Last activity: 2026-01-25 - Completed 12-04-PLAN.md (visual language documentation)
 
-Progress: [████████████░░░░░░░░] 86% (12/14 phases complete, 3/3 plans in Phase 12)
+Progress: [████████████░░░░░░░░] 86% (12/14 phases complete, 4/4 plans in Phase 12)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 15 (5 v1.0 + 5 v1.1 + 5 v1.2)
+- Total plans completed: 16 (5 v1.0 + 5 v1.1 + 6 v1.2)
 - Average duration (v1.1): 2.4 min
-- Average duration (v1.2): 2.7 min
-- Total execution time (v1.2): 13.5 min
+- Average duration (v1.2): 3.0 min
+- Total execution time (v1.2): 24.5 min
 
 **By Phase:**
 
@@ -36,7 +36,7 @@ Progress: [████████████░░░░░░░░] 86% (12
 | Phase 9 (Multi-Card Interpretation) | 1 | 2 min | 2 min |
 | Phase 10 (Positioning) | 2 | ~13 min | ~6.5 min |
 | Phase 11 (Documentation) | 1 | 1.4 min | 1.4 min |
-| Phase 12 (Visual Language) | 3 | 10.5 min | 3.5 min |
+| Phase 12 (Visual Language) | 4 | 21.5 min | 5.4 min |
 
 ## Accumulated Context
 
@@ -45,6 +45,10 @@ Progress: [████████████░░░░░░░░] 86% (12
 All decisions logged in PROJECT.md Key Decisions table.
 
 **Recent (Phase 12):**
+- Extracted 6 brand colors (Primary, Secondary, Accent, Warm Neutral, Cool Neutral, Dark Base) from hero image
+- Typography pairing: Cormorant Garamond (headlines) + Source Sans 3 (body) + JetBrains Mono (code)
+- Film aesthetic codified: soft grain, natural lighting, analog warmth, no sharp focus
+- Diversity representation explicitly documented: skin tone spectrum, background figures
 - Asset generation scripts placed in skills/generate-image/ to leverage existing Sharp dependency
 - Sharp's 'attention' positioning for smart cropping social variants
 - Minimalist tarot card with star motif for favicon recognition at small sizes
@@ -89,6 +93,12 @@ All decisions logged in PROJECT.md Key Decisions table.
 - `skills/generate-image/generate-social-assets.ts` - Social variant generator with smart cropping
 - `skills/generate-image/generate-favicons.ts` - Favicon PNG generator from SVG
 
+**Plan 12-04:** Visual language documentation:
+- `brand/COLOR_PALETTE.md` - 6 brand colors extracted from hero with hex/RGB values and usage guidelines
+- `brand/BRAND_GUIDE.md` - Comprehensive visual language documentation with typography, imagery rules, asset specs
+- `brand/scripts/extract-palette.ts` - TypeScript extraction script template
+- `skills/generate-image/extract-palette.mjs` - Working extraction script using get-image-colors
+
 ### Phase 11 Deliverables
 
 - `README.md` - 160 lines with Esoterica voice, installation, usage examples
@@ -117,15 +127,15 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-01-24
-Stopped at: Completed 12-03-PLAN.md (social media & favicon assets)
+Last session: 2026-01-25
+Stopped at: Completed 12-04-PLAN.md (visual language documentation)
 Resume file: None
 
 ## Next Steps
 
-1. Phase 12 (Visual Language) complete - all brand assets generated
+1. Phase 12 (Visual Language) complete - all brand assets and documentation ready
 2. Move to Phase 13: Landing Page
-3. Integrate hero image, social meta tags, and favicon into web presence
+3. Integrate hero image, social meta tags, favicon, and apply brand guide (colors, typography) to web presence
 
 ---
-*Last updated: 2026-01-24 after 12-03-PLAN.md completion*
+*Last updated: 2026-01-25 after 12-04-PLAN.md completion*
