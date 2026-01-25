@@ -5,25 +5,25 @@
 See: .planning/PROJECT.md (updated 2026-01-23)
 
 **Core value:** Agents can draw and interpret tarot cards as a perspective-shifting tool
-**Current focus:** v1.2 Brand & Marketing - Phase 12 (Visual Language)
+**Current focus:** v1.2 Brand & Marketing - Phase 13 (Landing Page)
 
 ## Current Position
 
 Milestone: v1.2 Brand & Marketing
-Phase: 12 of 14 (Visual Language)
-Plan: 04 of 04
-Status: Phase complete
-Last activity: 2026-01-25 - Completed 12-04-PLAN.md (visual language documentation)
+Phase: 13 of 14 (Landing Page)
+Plan: 01 of 02
+Status: In progress
+Last activity: 2026-01-25 - Completed 13-01-PLAN.md (GitHub Pages directory setup)
 
-Progress: [████████████░░░░░░░░] 86% (12/14 phases complete, 4/4 plans in Phase 12)
+Progress: [█████████████░░░░░░░] 88% (12/14 phases complete, 1/2 plans in Phase 13)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 16 (5 v1.0 + 5 v1.1 + 6 v1.2)
+- Total plans completed: 17 (5 v1.0 + 5 v1.1 + 7 v1.2)
 - Average duration (v1.1): 2.4 min
-- Average duration (v1.2): 3.0 min
-- Total execution time (v1.2): 24.5 min
+- Average duration (v1.2): 2.9 min
+- Total execution time (v1.2): 25.5 min
 
 **By Phase:**
 
@@ -37,6 +37,7 @@ Progress: [████████████░░░░░░░░] 86% (12
 | Phase 10 (Positioning) | 2 | ~13 min | ~6.5 min |
 | Phase 11 (Documentation) | 1 | 1.4 min | 1.4 min |
 | Phase 12 (Visual Language) | 4 | 21.5 min | 5.4 min |
+| Phase 13 (Landing Page) | 1 | 1 min | 1 min |
 
 ## Accumulated Context
 
@@ -44,7 +45,11 @@ Progress: [████████████░░░░░░░░] 86% (12
 
 All decisions logged in PROJECT.md Key Decisions table.
 
-**Recent (Phase 12):**
+**Recent (Phase 13):**
+- Use full hero-primary.png (7.1M) for quality over web performance - GitHub Pages has no bandwidth limits
+- GitHub Pages serves from /docs folder on main branch
+
+**Phase 12:**
 - Extracted 6 brand colors (Primary, Secondary, Accent, Warm Neutral, Cool Neutral, Dark Base) from hero image
 - Typography pairing: Cormorant Garamond (headlines) + Source Sans 3 (body) + JetBrains Mono (code)
 - Film aesthetic codified: soft grain, natural lighting, analog warmth, no sharp focus
@@ -72,6 +77,17 @@ All decisions logged in PROJECT.md Key Decisions table.
 - Positioning: Perspective-shifting framework using tarot archetypes for complex decisions
 - Dual-audience: True equality - neither developers nor practitioners are primary
 - Voice: Cosmic priestess energy - knowledgeable, mysterious, playful, confident
+
+### Phase 13 Deliverables
+
+**Plan 13-01:** GitHub Pages directory structure:
+- `docs/` - GitHub Pages deployment directory
+- `docs/hero-primary.png` - 7.1M hero image from Phase 12
+- `docs/og-image.png` - 450K Open Graph social sharing image
+- `docs/favicon.svg` - SVG favicon with tarot card star motif
+- `docs/favicon-32x32.png`, `docs/favicon-16x16.png` - PNG favicon variants
+- `docs/apple-touch-icon.png` - iOS home screen icon
+- `docs/index.html` - Placeholder HTML for deployment verification
 
 ### Phase 12 Deliverables
 
@@ -128,14 +144,14 @@ None.
 ## Session Continuity
 
 Last session: 2026-01-25
-Stopped at: Completed 12-04-PLAN.md (visual language documentation)
+Stopped at: Completed 13-01-PLAN.md (GitHub Pages directory setup)
 Resume file: None
 
 ## Next Steps
 
-1. Phase 12 (Visual Language) complete - all brand assets and documentation ready
-2. Move to Phase 13: Landing Page
-3. Integrate hero image, social meta tags, favicon, and apply brand guide (colors, typography) to web presence
+1. Phase 13 Plan 01 complete - docs/ directory structure ready with all brand assets
+2. Move to Phase 13 Plan 02: Implement full landing page HTML
+3. Integrate hero image, social meta tags, favicon, brand colors, and typography from Phase 12
 
 ---
-*Last updated: 2026-01-25 after 12-04-PLAN.md completion*
+*Last updated: 2026-01-25 after 13-01-PLAN.md completion*
