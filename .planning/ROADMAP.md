@@ -131,10 +131,12 @@ Plans:
 3. Open graph images configured for clean link sharing
 4. Demo GIF or video shows wizard flow
 
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 14-01: TBD
+- [ ] 14-01-PLAN.md — Write LinkedIn posts and complete OG meta tags
+- [ ] 14-02-PLAN.md — Create Remotion demo video project
+- [ ] 14-03-PLAN.md — Generate LinkedIn carousel and verify all launch materials
 
 ## Progress
 
@@ -155,8 +157,8 @@ Plans:
 | 11. Documentation | v1.2 | 1/1 | Complete | 2026-01-24 |
 | 12. Visual Language | v1.2 | 4/4 | Complete | 2026-01-25 |
 | 13. Landing Page | v1.2 | 2/2 | Complete | 2026-01-25 |
-| 14. Launch Materials | v1.2 | 0/0 | Not started | - |
+| 14. Launch Materials | v1.2 | 0/3 | Planned | - |
 
 ---
 *Roadmap created: 2026-01-22*
-*Last updated: 2026-01-25 - Phase 13 planned*
+*Last updated: 2026-01-25 - Phase 14 planned*
