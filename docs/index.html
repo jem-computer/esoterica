@@ -239,6 +239,24 @@
       user-select: all;
     }
 
+    .install--prose {
+      margin-top: 2.5rem;
+      background: var(--bg-code);
+      border-color: var(--border-code);
+    }
+
+    [data-theme="light"] .install--prose {
+      --bg-code: #F0EFEB;
+      --text-code: #2C2C2C;
+      --border-code: rgba(0, 0, 0, 0.1);
+    }
+
+    [data-theme="dark"] .install--prose {
+      --bg-code: rgba(40, 40, 40, 0.95);
+      --text-code: #E8E8E8;
+      --border-code: rgba(255, 255, 255, 0.1);
+    }
+
     .copy-btn {
       background: transparent;
       border: 1px solid var(--border-code);
@@ -403,8 +421,8 @@
           shift perspectives on complex decisions.
         </p>
         <div class="install">
-          <code id="cmd">npm install -g esoterica</code>
-          <button class="copy-btn" id="copy" aria-label="Copy install command">Copy</button>
+          <code>npm install -g esoterica</code>
+          <button class="copy-btn" aria-label="Copy install command">Copy</button>
         </div>
       </div>
     </main>
@@ -439,7 +457,7 @@
       </p>
 
       <p>
-        Claude doesn't "believe" in tarot. Neither do you, probably. That's not the point. <strong>The point is that sometimes the most powerful thing an intelligence can do is interrupt itself.</strong> To reach into a deck of 78 archetypal keys and ask: what does The High Priestess whisper about your authentication flow? What would The Chariot demand of your deployment?
+        Claude doesn't "believe" in tarot—but belief was never the point. <strong>The point is that sometimes the most powerful thing an intelligence can do is interrupt itself.</strong> To reach into a deck of 78 archetypal keys and ask: what does The High Priestess whisper about your authentication flow? What would The Chariot demand of your deployment?
       </p>
 
       <p>
@@ -453,6 +471,11 @@
       <p>
         <strong>Ancient patterns. New paths.</strong> Install it. Draw a card. See what moves through you when you let the archetypes into your terminal.
       </p>
+
+      <div class="install install--prose">
+        <code>npm install -g esoterica</code>
+        <button class="copy-btn" aria-label="Copy install command">Copy</button>
+      </div>
     </div>
   </section>
 
@@ -476,28 +499,29 @@
       }
     });
 
-    // Copy to Clipboard
-    const copyBtn = document.getElementById('copy');
-    const cmd = document.getElementById('cmd');
-
-    copyBtn.addEventListener('click', async () => {
-      try {
-        await navigator.clipboard.writeText(cmd.textContent);
-        copyBtn.textContent = 'Copied';
-        setTimeout(() => { copyBtn.textContent = 'Copy'; }, 2000);
-      } catch (err) {
-        const ta = document.createElement('textarea');
-        ta.value = cmd.textContent;
-        ta.style.cssText = 'position:fixed;left:-9999px';
-        document.body.appendChild(ta);
-        ta.select();
+    // Copy to Clipboard (handles multiple buttons)
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const code = btn.parentElement.querySelector('code');
+        const command = code.textContent;
         try {
-          document.execCommand('copy');
-          copyBtn.textContent = 'Copied';
-          setTimeout(() => { copyBtn.textContent = 'Copy'; }, 2000);
-        } catch (e) {}
-        document.body.removeChild(ta);
-      }
+          await navigator.clipboard.writeText(command);
+          btn.textContent = 'Copied';
+          setTimeout(() => { btn.textContent = 'Copy'; }, 2000);
+        } catch (err) {
+          const ta = document.createElement('textarea');
+          ta.value = command;
+          ta.style.cssText = 'position:fixed;left:-9999px';
+          document.body.appendChild(ta);
+          ta.select();
+          try {
+            document.execCommand('copy');
+            btn.textContent = 'Copied';
+            setTimeout(() => { btn.textContent = 'Copy'; }, 2000);
+          } catch (e) {}
+          document.body.removeChild(ta);
+        }
+      });
     });
   </script>
 </body>
