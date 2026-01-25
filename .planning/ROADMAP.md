@@ -114,8 +114,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 13-01-PLAN.md — Create docs/ directory structure and copy brand assets
-- [ ] 13-02-PLAN.md — Build complete landing page with HTML/CSS/JS
+- [x] 13-01-PLAN.md — Create docs/ directory structure and copy brand assets
+- [x] 13-02-PLAN.md — Build complete landing page with HTML/CSS/JS
 
 #### Phase 14: Launch Materials
 
@@ -154,7 +154,7 @@ Plans:
 | 10. Positioning | v1.2 | 2/2 | Complete | 2026-01-24 |
 | 11. Documentation | v1.2 | 1/1 | Complete | 2026-01-24 |
 | 12. Visual Language | v1.2 | 4/4 | Complete | 2026-01-25 |
-| 13. Landing Page | v1.2 | 0/2 | Not started | - |
+| 13. Landing Page | v1.2 | 2/2 | Complete | 2026-01-25 |
 | 14. Launch Materials | v1.2 | 0/0 | Not started | - |
 
 ---
