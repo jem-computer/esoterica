@@ -100,21 +100,22 @@ Plans:
 
 #### Phase 13: Landing Page
 
-**Goal**: Public can discover and understand Esoterica via web presence
+**Goal**: Public can discover and understand Esoterica via minimal web presence
 
 **Depends on**: Phase 10 (positioning), Phase 11 (content), Phase 12 (visuals)
 
-**Requirements**: LAND-01, LAND-02, LAND-03
+**Requirements**: LAND-01, LAND-03
 
 **Success Criteria** (what must be TRUE):
 1. Landing page live at public URL with clear explanation
-2. Interactive demo or sample reading shows tool in action
-3. Visual design matches mystical-but-grounded brand tone
+2. Visual design matches mystical-but-grounded brand tone
+3. Install command is prominent with copy-to-clipboard functionality
 
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 13-01: TBD
+- [ ] 13-01-PLAN.md — Create docs/ directory structure and copy brand assets
+- [ ] 13-02-PLAN.md — Build complete landing page with HTML/CSS/JS
 
 #### Phase 14: Launch Materials
 
@@ -153,9 +154,9 @@ Plans:
 | 10. Positioning | v1.2 | 2/2 | Complete | 2026-01-24 |
 | 11. Documentation | v1.2 | 1/1 | Complete | 2026-01-24 |
 | 12. Visual Language | v1.2 | 4/4 | Complete | 2026-01-25 |
-| 13. Landing Page | v1.2 | 0/0 | Not started | - |
+| 13. Landing Page | v1.2 | 0/2 | Not started | - |
 | 14. Launch Materials | v1.2 | 0/0 | Not started | - |
 
 ---
 *Roadmap created: 2026-01-22*
-*Last updated: 2026-01-25 - Phase 12 complete*
+*Last updated: 2026-01-25 - Phase 13 planned*
