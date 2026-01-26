@@ -220,57 +220,65 @@ This section provides helper logic for physical mode card entry. When a user ent
 **match_card function logic:**
 
 Input: User-typed card name or number
-Output: Card number (0-21) or "no match"
+Output: Card number (0-77 for Full deck, 0-21 for Major Arcana only) or "no match"
 
 Matching strategy (apply in order):
 
 1. **Normalize input:**
    - Convert to lowercase
    - Strip leading "the " prefix (e.g., "the fool" → "fool")
+   - Trim whitespace
 
 2. **Exact match against card names:**
-   - Match normalized input against card name table below (e.g., "fool", "magician", "high priestess")
+   - Major Arcana: Match normalized input against card names (e.g., "fool", "magician", "high priestess")
+   - Minor Arcana: Match normalized full names (e.g., "ace of wands", "three of cups", "queen of swords", "king of pentacles")
 
 3. **Common variants:**
+
+   **Major Arcana:**
    - "wheel" matches "Wheel of Fortune"
    - "hanged" matches "Hanged Man"
    - Both "judgement" and "judgment" match card 20
 
+   **Minor Arcana pip cards (Ace-Ten):**
+   - Number words: "three of cups", "three cups" → Three of Cups
+   - Arabic numerals: "3 of cups", "3 cups" → Three of Cups
+   - Roman numerals: "III cups", "III of cups" → Three of Cups
+   - "of" is optional: "ace wands" matches "Ace of Wands"
+   - Special case: "ace" or "1" both valid for Ace cards
+
+   **Minor Arcana court cards (Page, Knight, Queen, King):**
+   - Full form: "queen of cups" → Queen of Cups
+   - Short form: "queen cups" → Queen of Cups
+   - Abbreviations: "Q cups", "Q of cups" → Queen of Cups
+   - Court abbreviations:
+     * P, page → Page
+     * Kn, knight → Knight
+     * Q, queen → Queen
+     * K, king → King
+
+   **Suit abbreviations:**
+   - wands, w → Wands
+   - cups, c → Cups
+   - swords, s → Swords
+   - pentacles, pent, p → Pentacles
+
 4. **Numeric input:**
-   - If input is a number, validate it's in range 0-21
+   - If input is a number, validate range based on deck mode:
+     * Major-only mode: 0-21
+     * Full deck mode: 0-77
    - Convert directly to card number
 
-5. **No match:**
-   - If none of the above match, return failure for user retry
+5. **Typo handling:**
+   - If no exact or variant match found, suggest closest match
+   - "Did you mean '[Card Name]'?" with confirmation
+   - User confirms yes/no
 
 **Card name lookup table:**
 
-Use this table to map card names/numbers to their full names:
+Use the Card Index table above to map card numbers to their full names (0-77).
 
-- 0: The Fool
-- 1: The Magician
-- 2: The High Priestess
-- 3: The Empress
-- 4: The Emperor
-- 5: The Hierophant
-- 6: The Lovers
-- 7: The Chariot
-- 8: Strength
-- 9: The Hermit
-- 10: Wheel of Fortune
-- 11: Justice
-- 12: The Hanged Man
-- 13: Death
-- 14: Temperance
-- 15: The Devil
-- 16: The Tower
-- 17: The Star
-- 18: The Moon
-- 19: The Sun
-- 20: Judgement
-- 21: The World
-
-When validating user input in physical mode, apply the match_card logic above to convert their input into a card number (0-21), then use the card number for interpretation.
+When validating user input in physical mode, apply the match_card logic above to convert their input into a card number (0-77 for Full deck, 0-21 for Major Arcana only), then use the card number for interpretation.
 
 ## Card Index
 
@@ -396,10 +404,13 @@ Wait for the user to indicate readiness (e.g., "ready", "done", "ok") before pro
 
 For each position in the spread, prompt the user to enter their card.
 
-Prompt format varies by spread type:
+Prompt format varies by spread type and deck choice:
 
-- **Single card reading:**
+- **Single card reading (Major Arcana only deck):**
   "What card did you draw? (e.g., The Fool, Death, 16)"
+
+- **Single card reading (Full deck):**
+  "What card did you draw? (e.g., Three of Cups, Queen of Wands, 38)"
 
 - **Multi-card reading (for each position):**
   "Card for [Position Name] ([position description]):"
@@ -416,7 +427,7 @@ For each card entry:
 
 1. **Apply match_card logic:**
    - Use the matching strategy from Card Matching Functions section
-   - Convert user input to card number (0-21)
+   - Convert user input to card number (0-77 for Full deck, 0-21 for Major Arcana only)
 
 2. **If match found:**
    - Check for duplicate (only in multi-card spreads)
@@ -424,7 +435,9 @@ For each card entry:
    - If unique: Confirm and continue: "[Card Name] - continuing..."
 
 3. **If no match:**
-   - Gentle retry prompt: "I don't recognize that card. Try the card's name (like 'The Fool' or 'Death') or its number (0-21)"
+   - Gentle retry prompt varies by deck:
+     * Major Arcana only: "I don't recognize that card. Try the card's name (like 'The Fool' or 'Death') or its number (0-21)"
+     * Full deck: "I don't recognize that card. Try the card's name (like 'Three of Cups' or 'Queen of Wands') or its number (0-77)"
    - No retry limit - user may be checking their deck
    - Accept next input and re-validate
 
