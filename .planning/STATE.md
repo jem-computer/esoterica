@@ -10,22 +10,22 @@ See: .planning/PROJECT.md (updated 2026-01-25)
 ## Current Position
 
 Milestone: v1.3 Minor Arcana
-Phase: 17 - Minor Arcana Content — COMPLETE
-Plan: 4/4 complete (All 4 suits written)
-Status: Phase 17 verified, ready for Phase 18
-Last activity: 2026-01-26 — Phase 17 complete (56 Minor Arcana cards)
+Phase: 18 - Wizard Enhancement — IN PROGRESS
+Plan: 1/3 complete (Deck Selection)
+Status: Plan 18-01 complete, ready for 18-02
+Last activity: 2026-01-26 — Completed 18-01-PLAN.md (Deck Selection)
 
-Progress: [██████████████░░░░░░] 67% — 2/3 phases complete
+Progress: [██████████████░░░░░░] 69% — 2.33/3 phases complete
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 28 (5 v1.0 + 5 v1.1 + 12 v1.2 + 6 v1.3)
+- Total plans completed: 29 (5 v1.0 + 5 v1.1 + 12 v1.2 + 7 v1.3)
 - Average duration (v1.1): 2.4 min
 - Average duration (v1.2): 7.6 min
-- Average duration (v1.3): 2.3 min
+- Average duration (v1.3): 2.1 min
 - Total execution time (v1.2): ~84 min
-- Total execution time (v1.3): ~13 min
+- Total execution time (v1.3): ~14.5 min
 
 **By Phase:**
 
@@ -43,6 +43,7 @@ Progress: [██████████████░░░░░░] 67% —
 | Phase 14 (Launch Materials) | 3 | ~39 min | ~13 min |
 | Phase 16 (Architecture Refactor) | 2 | 5 min | 2.5 min |
 | Phase 17 (Minor Arcana Content) | 4/4 | ~12 min | ~3 min |
+| Phase 18 (Wizard Enhancement) | 1/3 | 1.5 min | 1.5 min |
 
 ## v1.3 Phase Status
 
@@ -50,7 +51,7 @@ Progress: [██████████████░░░░░░] 67% —
 |-------|------|--------------|--------|
 | 16 | Architecture Refactor | ARCH-01 through ARCH-05 | Complete ✓ |
 | 17 | Minor Arcana Content | CARD-01 through CARD-06 | Complete ✓ |
-| 18 | Wizard Enhancement | WIZD-01 through WIZD-03 | Blocked by 17 |
+| 18 | Wizard Enhancement | WIZD-01 through WIZD-03 | In Progress (1/3) |
 
 ## Accumulated Context
 
@@ -99,6 +100,12 @@ All decisions logged in PROJECT.md Key Decisions table.
 - All situations are concrete scenarios (e.g., "Starting a business") not abstract keywords
 - Earth element expressed through material/work/body/finances/practical concerns
 
+**Phase 18-01 Decisions:**
+- Major Arcana only listed first and described as "recommended" for backwards compatibility
+- Question 2.5 inserted between spread and mode for logical flow
+- Conditional shuf ranges applied across all spread types (Single, Three-Card, Claude Suggests, Custom)
+- Deck choice determines card pool range consistently across all spread/mode combinations
+
 ### Previous Milestone Deliverables
 
 **v1.2 Shipped 2026-01-26:**
@@ -125,13 +132,13 @@ None.
 ## Session Continuity
 
 Last session: 2026-01-26
-Stopped at: Phase 17 complete — All 56 Minor Arcana cards written
+Stopped at: Completed 18-01-PLAN.md (Deck Selection wizard step)
 Resume file: None
 
 ## Next Steps
 
-1. `/gsd:plan-phase 18` - Create plan for Wizard Enhancement
-2. Execute Phase 18 plans
+1. Execute remaining Phase 18 plans (18-02, 18-03)
+2. Verify Phase 18 complete
 3. Ship v1.3
 
 ### v1.2 Launch Checklist (Still Active)
@@ -144,4 +151,4 @@ Resume file: None
 - [ ] Share landing page URL: jem-computer.github.io/esoterica
 
 ---
-*Last updated: 2026-01-26 — Phase 17 complete (Minor Arcana Content)*
+*Last updated: 2026-01-26 — Completed 18-01-PLAN.md (Deck Selection wizard step)*
