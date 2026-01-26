@@ -250,6 +250,58 @@ Use this table to map card names/numbers to their full names:
 
 When validating user input in physical mode, apply the match_card logic above to convert their input into a card number (0-21), then use the card number for interpretation.
 
+## Card Index
+
+Use this index to identify drawn cards. After drawing, read the appropriate card file for full meanings.
+
+| # | Name | Suit | Keywords |
+|---|------|------|----------|
+| 0 | The Fool | Major | New beginnings, leap of faith, innocence, potential |
+| 1 | The Magician | Major | Manifestation, skill, tools, channeling power |
+| 2 | The High Priestess | Major | Intuition, mystery, hidden knowledge, receptivity |
+| 3 | The Empress | Major | Abundance, nurturing, creativity, growth |
+| 4 | The Emperor | Major | Structure, authority, leadership, boundaries |
+| 5 | The Hierophant | Major | Tradition, teaching, spiritual authority, mentorship |
+| 6 | The Lovers | Major | Choice, union, values, relationship |
+| 7 | The Chariot | Major | Willpower, determination, victory, control |
+| 8 | Strength | Major | Inner strength, compassion, gentle mastery, courage |
+| 9 | The Hermit | Major | Solitude, inner guidance, wisdom, introspection |
+| 10 | Wheel of Fortune | Major | Cycles, fate, change, turning points |
+| 11 | Justice | Major | Fairness, truth, consequence, balance |
+| 12 | The Hanged Man | Major | Surrender, new perspective, pause, sacrifice |
+| 13 | Death | Major | Transformation, endings, release, transition |
+| 14 | Temperance | Major | Balance, moderation, alchemy, patience |
+| 15 | The Devil | Major | Bondage, materialism, shadow work, attachment |
+| 16 | The Tower | Major | Sudden upheaval, revelation, liberation, crisis |
+| 17 | The Star | Major | Hope, inspiration, healing, renewal |
+| 18 | The Moon | Major | Illusion, intuition, fear, unconscious |
+| 19 | The Sun | Major | Joy, clarity, vitality, success |
+| 20 | Judgement | Major | Awakening, reckoning, resurrection, calling |
+| 21 | The World | Major | Completion, integration, accomplishment, wholeness |
+
+## Card Data Files
+
+Card meanings are stored in separate files by suit. After drawing cards, read ONLY the relevant file(s).
+
+**Available card files:**
+- [Major Arcana](cards/major-arcana.md) - The Fool through The World (0-21)
+- [Wands](cards/wands.md) - Ace through King of Wands (Phase 17)
+- [Cups](cards/cups.md) - Ace through King of Cups (Phase 17)
+- [Swords](cards/swords.md) - Ace through King of Swords (Phase 17)
+- [Pentacles](cards/pentacles.md) - Ace through King of Pentacles (Phase 17)
+
+**Loading pattern:**
+
+After cards are drawn (digital mode) or entered (physical mode):
+
+1. **Identify the drawn card(s)** by matching to the Card Index above
+2. **Determine suit file(s) needed** based on suit column
+3. **Read only the needed file(s)** - do not load all card files
+4. **Find the specific card section** (e.g., "## Card 16: The Tower")
+5. **Proceed with interpretation** using the card's Themes, Situations, Shadows, Symbols
+
+Example: For a single card draw of The Tower (16), read `cards/major-arcana.md` and locate "## Card 16: The Tower".
+
 ## Physical Mode Card Entry
 
 This section describes the flow when user selects "Physical deck" in wizard Question 3.
