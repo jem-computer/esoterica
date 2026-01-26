@@ -1,0 +1,35 @@
+{
+  "name": "esoterica",
+  "version": "1.0.0",
+  "description": "A tarot reading skill for Claude Code - ancient patterns, new paths",
+  "main": "bin/install.js",
+  "bin": {
+    "esoterica": "bin/install.js"
+  },
+  "files": [
+    "bin/",
+    "skills/tarot/",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "claude-code",
+    "skill",
+    "tarot",
+    "ai",
+    "claude"
+  ],
+  "author": "jem-computer",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jem-computer/esoterica.git"
+  },
+  "homepage": "https://github.com/jem-computer/esoterica#readme",
+  "bugs": {
+    "url": "https://github.com/jem-computer/esoterica/issues"
+  }
+}
