@@ -10,20 +10,22 @@ See: .planning/PROJECT.md (updated 2026-01-25)
 ## Current Position
 
 Milestone: v1.3 Minor Arcana
-Phase: 16 - Architecture Refactor
-Plan: Not started
-Status: Ready to plan
-Last activity: 2026-01-25 — v1.3 roadmap created
+Phase: 16 - Architecture Refactor (1 of 5 plans complete)
+Plan: 16-01 complete
+Status: In progress
+Last activity: 2026-01-26 — Completed 16-01-PLAN.md (card data extraction)
 
-Progress: [░░░░░░░░░░░░░░░░░░░░] 0% — 0/3 phases complete
+Progress: [█░░░░░░░░░░░░░░░░░░░] 5% — 1/20 plans complete (16-01)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 22 (5 v1.0 + 5 v1.1 + 12 v1.2)
+- Total plans completed: 23 (5 v1.0 + 5 v1.1 + 12 v1.2 + 1 v1.3)
 - Average duration (v1.1): 2.4 min
 - Average duration (v1.2): 7.6 min
+- Average duration (v1.3): 2 min
 - Total execution time (v1.2): ~84 min
+- Total execution time (v1.3): ~2 min
 
 **By Phase:**
 
@@ -39,12 +41,13 @@ Progress: [░░░░░░░░░░░░░░░░░░░░] 0% — 
 | Phase 12 (Visual Language) | 4 | 21.5 min | 5.4 min |
 | Phase 13 (Landing Page) | 2 | ~46 min | ~23 min |
 | Phase 14 (Launch Materials) | 3 | ~39 min | ~13 min |
+| Phase 16 (Architecture Refactor) | 1/5 | 2 min | 2 min |
 
 ## v1.3 Phase Status
 
 | Phase | Goal | Requirements | Status |
 |-------|------|--------------|--------|
-| 16 | Architecture Refactor | ARCH-01 through ARCH-05 | Pending |
+| 16 | Architecture Refactor | ARCH-01 through ARCH-05 | In progress (1/5 plans complete) |
 | 17 | Minor Arcana Content | CARD-01 through CARD-06 | Blocked by 16 |
 | 18 | Wizard Enhancement | WIZD-01 through WIZD-03 | Blocked by 16, 17 |
 
@@ -59,6 +62,12 @@ All decisions logged in PROJECT.md Key Decisions table.
 - Architecture refactor first to enable lazy card loading
 - Card content as single phase (4 suits share same structure)
 - Wizard enhancement last (depends on content existing)
+
+**Phase 16-01 Decisions:**
+- Extract card data to separate files for lazy loading after draw
+- Use horizontal rules (---) as visual separators between cards
+- Document elemental associations in Minor Arcana placeholder files
+- Card data format: "## Card N: Name" for easy Claude Read tool lookup
 
 ### Previous Milestone Deliverables
 
@@ -85,8 +94,8 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-01-25
-Stopped at: v1.3 roadmap created
+Last session: 2026-01-26
+Stopped at: Completed 16-01-PLAN.md (card data extraction)
 Resume file: None
 
 ## Next Steps
@@ -109,4 +118,4 @@ Resume file: None
 - [ ] Share landing page URL: jem-computer.github.io/esoterica
 
 ---
-*Last updated: 2026-01-25 — v1.3 roadmap created*
+*Last updated: 2026-01-26 — Completed 16-01-PLAN.md*
