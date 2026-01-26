@@ -4,7 +4,7 @@
 
 - **v1.0 Tarot Skill** - Phases 1-5 (shipped 2026-01-22)
 - **v1.1 Wizard UI** - Phases 6-9 (shipped 2026-01-23)
-- **v1.2 Brand & Marketing** - Phases 10-14 (in progress)
+- **v1.2 Brand & Marketing** - Phases 10-14 (shipped 2026-01-26)
 
 ## Phases
 
@@ -134,9 +134,9 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 14-01-PLAN.md — Write LinkedIn posts and complete OG meta tags
-- [ ] 14-02-PLAN.md — Create Remotion demo video project
-- [ ] 14-03-PLAN.md — Generate LinkedIn carousel and verify all launch materials
+- [x] 14-01-PLAN.md — Write LinkedIn posts and complete OG meta tags
+- [x] 14-02-PLAN.md — Create Remotion demo video project
+- [x] 14-03-PLAN.md — Generate LinkedIn carousel and verify all launch materials
 
 ## Progress
 
@@ -157,8 +157,8 @@ Plans:
 | 11. Documentation | v1.2 | 1/1 | Complete | 2026-01-24 |
 | 12. Visual Language | v1.2 | 4/4 | Complete | 2026-01-25 |
 | 13. Landing Page | v1.2 | 2/2 | Complete | 2026-01-25 |
-| 14. Launch Materials | v1.2 | 0/3 | Planned | - |
+| 14. Launch Materials | v1.2 | 3/3 | Complete | 2026-01-26 |
 
 ---
 *Roadmap created: 2026-01-22*
-*Last updated: 2026-01-25 - Phase 14 planned*
+*Last updated: 2026-01-26 - v1.2 Brand & Marketing milestone complete*

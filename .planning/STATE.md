@@ -9,18 +9,18 @@ See: .planning/PROJECT.md (updated 2026-01-23)
 
 ## Current Position
 
-Milestone: v1.2 Brand & Marketing
+Milestone: v1.2 Brand & Marketing (COMPLETE)
 Phase: 14 of 14 (Launch Materials)
-Plan: 2 of 2
-Status: Phase complete
-Last activity: 2026-01-26 - Completed 14-02-PLAN.md
+Plan: 3 of 3
+Status: Milestone complete
+Last activity: 2026-01-26 - Completed 14-03-PLAN.md (human verification checkpoint)
 
-Progress: [████████████████████] 100% (14/14 phases, 2/2 plans in Phase 14 complete)
+Progress: [████████████████████] 100% (14/14 phases, 3/3 plans in Phase 14 complete)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 21 (5 v1.0 + 5 v1.1 + 11 v1.2)
+- Total plans completed: 22 (5 v1.0 + 5 v1.1 + 12 v1.2)
 - Average duration (v1.1): 2.4 min
 - Average duration (v1.2): 7.6 min
 - Total execution time (v1.2): ~84 min
@@ -38,7 +38,7 @@ Progress: [████████████████████] 100% (1
 | Phase 11 (Documentation) | 1 | 1.4 min | 1.4 min |
 | Phase 12 (Visual Language) | 4 | 21.5 min | 5.4 min |
 | Phase 13 (Landing Page) | 2 | ~46 min | ~23 min |
-| Phase 14 (Launch Materials) | 2 | 14.2 min | 7.1 min |
+| Phase 14 (Launch Materials) | 3 | ~39 min | ~13 min |
 
 ## Accumulated Context
 
@@ -112,6 +112,13 @@ All decisions logged in PROJECT.md Key Decisions table.
 - `demo/src/WizardFlow.tsx` - Scene components (install, cards, interpretation, endcard)
 - `demo/src/styles.ts` - Brand colors and fonts from COLOR_PALETTE.md
 - `demo/.gitignore` - Ignore node_modules and out directories
+
+**Plan 14-03:** LinkedIn carousel and launch verification:
+- `brand/launch/carousel/slide-01.png` through `slide-06.png` - 1080x1350px carousel slides
+- `brand/launch/carousel/generate-slides.sh` - Reproducible slide generation script
+- `demo/out/demo.mp4` - Rendered 60-second demo video (3.4MB)
+- `demo/out/demo.gif` - Scaled demo GIF (1.04MB)
+- Human verification checkpoint passed
 
 ### Phase 13 Deliverables
 
@@ -190,30 +197,36 @@ None.
 ## Session Continuity
 
 Last session: 2026-01-26
-Stopped at: Completed 14-02-PLAN.md (Phase 14 complete)
+Stopped at: v1.2 Brand & Marketing milestone complete
 Resume file: None
 
 ## Next Steps
 
-1. **Phase 14 complete** - All launch materials ready:
-   - LinkedIn posts written (teaser + announcement)
-   - OG meta tags complete on landing page
-   - Remotion demo video project ready to render
+**v1.2 Brand & Marketing milestone COMPLETE** (14/14 phases, 22 plans total)
 
-2. **Render demo video:**
-   - Preview: `cd demo && npm run dev`
-   - Render MP4: `cd demo && npm run build`
-   - Optional GIF: `cd demo && npm run build:gif`
+### Launch Checklist
 
-3. **Launch checklist:**
-   - [ ] Test OG tags at https://metatags.io/
-   - [ ] Render and review demo video
-   - [ ] Enable GitHub Pages (Settings → Pages → main → /docs)
-   - [ ] Post LinkedIn teaser
-   - [ ] Post LinkedIn announcement with demo video
-   - [ ] Share landing page URL
+- [ ] Enable GitHub Pages (Settings → Pages → main → /docs)
+- [ ] Test OG tags at https://metatags.io/
+- [ ] Post LinkedIn teaser (brand/launch/linkedin-posts.md)
+- [ ] Wait 1-3 days
+- [ ] Post LinkedIn announcement with carousel + demo video
+- [ ] Share landing page URL: jem-computer.github.io/esoterica
 
-4. **v1.2 Brand & Marketing milestone COMPLETE** (14/14 phases)
+### Assets Ready
+
+| Asset | Location |
+|-------|----------|
+| LinkedIn posts | `brand/launch/linkedin-posts.md` |
+| Carousel slides | `brand/launch/carousel/` (6 slides) |
+| Demo video | `demo/out/demo.mp4` |
+| Demo GIF | `demo/out/demo.gif` |
+| Landing page | `docs/index.html` |
+| OG image | `docs/og-image.png` |
+
+### Future Work
+
+See Pending Todos below for v1.3+ ideas.
 
 ---
 *Last updated: 2026-01-26 after Phase 14 completion*
