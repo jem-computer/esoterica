@@ -1,0 +1,25 @@
+{
+  "name": "demo",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion render Demo out/demo.mp4",
+    "build:gif": "remotion render Demo out/demo.gif --image-format=png --codec=gif"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "@remotion/bundler": "^4.0.409",
+    "@remotion/cli": "^4.0.409",
+    "@remotion/renderer": "^4.0.409",
+    "remotion": "^4.0.409"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.10",
+    "@types/react": "^19.2.9",
+    "typescript": "^5.9.3"
+  }
+}
