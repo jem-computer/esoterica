@@ -383,10 +383,14 @@ After cards are drawn (digital mode) or entered (physical mode):
 1. **Identify the drawn card(s)** by matching to the Card Index above
 2. **Determine suit file(s) needed** based on suit column
 3. **Read only the needed file(s)** - do not load all card files
-4. **Find the specific card section** (e.g., "## Card 16: The Tower")
+4. **Find the specific card section:**
+   - Major Arcana: `## Card N: Name` (e.g., "## Card 16: The Tower")
+   - Minor Arcana: `## Name` (e.g., "## Three of Cups")
 5. **Proceed with interpretation** using the card's Themes, Situations, Shadows, Symbols
 
-Example: For a single card draw of The Tower (16), read `cards/major-arcana.md` and locate "## Card 16: The Tower".
+Examples:
+- The Tower (16): Read `cards/major-arcana.md`, locate "## Card 16: The Tower"
+- Three of Cups (38): Read `cards/cups.md`, locate "## Three of Cups"
 
 ## Physical Mode Card Entry
 
