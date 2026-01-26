@@ -152,7 +152,7 @@ Plans:
 **Plans**: 1 plan
 
 Plans:
-- [ ] 15-01-PLAN.md - Create npm package configuration, installer script, and publish to registry
+- [x] 15-01-PLAN.md - Create npm package configuration, installer script, and publish to registry
 
 ## Progress
 
@@ -174,8 +174,8 @@ Plans:
 | 12. Visual Language | v1.2 | 4/4 | Complete | 2026-01-25 |
 | 13. Landing Page | v1.2 | 2/2 | Complete | 2026-01-25 |
 | 14. Launch Materials | v1.2 | 3/3 | Complete | 2026-01-26 |
-| 15. Set Up User Installation | v1.2 | 0/1 | Planned | - |
+| 15. Set Up User Installation | v1.2 | 1/1 | Complete | 2026-01-26 |
 
 ---
 *Roadmap created: 2026-01-22*
-*Last updated: 2026-01-26 - Phase 15 added*
+*Last updated: 2026-01-26 - Phase 15 complete, v1.2 milestone complete*

@@ -9,13 +9,13 @@ See: .planning/PROJECT.md (updated 2026-01-23)
 
 ## Current Position
 
-Milestone: v1.2 Brand & Marketing (COMPLETE)
-Phase: 14 of 14 (Launch Materials)
-Plan: 3 of 3
+Milestone: v1.2 Brand & Marketing (Extended)
+Phase: 15 of 15 (Set Up User Installation)
+Plan: 1 of 1 complete
 Status: Milestone complete
-Last activity: 2026-01-26 - Completed 14-03-PLAN.md (human verification checkpoint)
+Last activity: 2026-01-26 - Phase 15 complete, package published
 
-Progress: [████████████████████] 100% (14/14 phases, 3/3 plans in Phase 14 complete)
+Progress: [████████████████████] 100% (15/15 phases complete)
 
 ## Performance Metrics
 
@@ -187,22 +187,26 @@ Complete positioning suite ready for downstream phases:
 - [ ] Explore subagent benefits for tarot skill
 - [ ] Integrate tarot with GSD workflow while keeping independence
 - [ ] Remove .claude-plugin directory (not configured properly)
-- [ ] Add npx installation support (like get-shit-done)
+- [x] Add npx installation support (like get-shit-done) — published as @templeofsilicon/esoterica
 - [ ] Add contribution policy - coven members only (no random PRs)
 
 ### Blockers/Concerns
 
 None.
 
+### Roadmap Evolution
+
+- Phase 15 added: Set up user installation (npx/npm support)
+
 ## Session Continuity
 
 Last session: 2026-01-26
-Stopped at: v1.2 Brand & Marketing milestone complete
+Stopped at: Phase 15 added, needs planning
 Resume file: None
 
 ## Next Steps
 
-**v1.2 Brand & Marketing milestone COMPLETE** (14/14 phases, 22 plans total)
+**v1.2 Brand & Marketing milestone COMPLETE** (15/15 phases, 23 plans total)
 
 ### Launch Checklist
 
@@ -228,5 +232,13 @@ Resume file: None
 
 See Pending Todos below for v1.3+ ideas.
 
+### Phase 15 Deliverables
+
+**Plan 15-01:** npm package and installer:
+- `package.json` - npm package config with scoped name @templeofsilicon/esoterica
+- `bin/install.js` - Zero-dependency installer script (copies to ~/.claude/skills/tarot/)
+- `LICENSE` - MIT license file
+- Updated all marketing assets with new install command (README, landing page, LinkedIn, carousel, demo video)
+
 ---
-*Last updated: 2026-01-26 after Phase 14 completion*
+*Last updated: 2026-01-26 after Phase 15 completion - v1.2 milestone complete*
