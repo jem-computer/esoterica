@@ -62,26 +62,26 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| ARCH-01 | TBD | Pending |
-| ARCH-02 | TBD | Pending |
-| ARCH-03 | TBD | Pending |
-| ARCH-04 | TBD | Pending |
-| ARCH-05 | TBD | Pending |
-| CARD-01 | TBD | Pending |
-| CARD-02 | TBD | Pending |
-| CARD-03 | TBD | Pending |
-| CARD-04 | TBD | Pending |
-| CARD-05 | TBD | Pending |
-| CARD-06 | TBD | Pending |
-| WIZD-01 | TBD | Pending |
-| WIZD-02 | TBD | Pending |
-| WIZD-03 | TBD | Pending |
+| ARCH-01 | Phase 16 | Pending |
+| ARCH-02 | Phase 16 | Pending |
+| ARCH-03 | Phase 16 | Pending |
+| ARCH-04 | Phase 16 | Pending |
+| ARCH-05 | Phase 16 | Pending |
+| CARD-01 | Phase 17 | Pending |
+| CARD-02 | Phase 17 | Pending |
+| CARD-03 | Phase 17 | Pending |
+| CARD-04 | Phase 17 | Pending |
+| CARD-05 | Phase 17 | Pending |
+| CARD-06 | Phase 17 | Pending |
+| WIZD-01 | Phase 18 | Pending |
+| WIZD-02 | Phase 18 | Pending |
+| WIZD-03 | Phase 18 | Pending |
 
 **Coverage:**
 - v1.3 requirements: 14 total
-- Mapped to phases: 0
-- Unmapped: 14
+- Mapped to phases: 14
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-01-25*
-*Last updated: 2026-01-25 after initial definition*
+*Last updated: 2026-01-25 after v1.3 roadmap creation*

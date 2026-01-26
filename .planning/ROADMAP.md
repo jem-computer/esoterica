@@ -5,6 +5,7 @@
 - **v1.0 Tarot Skill** - Phases 1-5 (shipped 2026-01-22)
 - **v1.1 Wizard UI** - Phases 6-9 (shipped 2026-01-23)
 - **v1.2 Brand & Marketing** - Phases 10-15 (shipped 2026-01-26)
+- **v1.3 Minor Arcana** - Phases 16-18 (active)
 
 ## Phases
 
@@ -50,9 +51,75 @@ See: `.planning/milestones/v1.2-ROADMAP.md` for full details.
 
 </details>
 
+### v1.3 Minor Arcana (Phases 16-18)
+
+**Goal:** Complete the 78-card deck with 56 Minor Arcana cards at full interpretive depth.
+
+#### Phase 16: Architecture Refactor
+
+**Goal:** Card data lives in separate files, SKILL.md becomes lean orchestration layer
+
+**Dependencies:** None (foundation for v1.3)
+
+**Requirements:**
+- ARCH-01: Card data separated from SKILL.md into suit-based files
+- ARCH-02: SKILL.md contains wizard flow, interpretation logic, and card index only
+- ARCH-03: Card index includes name, suit, and keywords for all 78 cards
+- ARCH-04: Read tool fetches only drawn cards' full meanings after selection
+- ARCH-05: Five card data files: major-arcana.md, wands.md, cups.md, swords.md, pentacles.md
+
+**Success Criteria:**
+1. Agent can invoke `/tarot` and complete a reading using extracted major-arcana.md
+2. SKILL.md contains card index (name, suit, keywords) but not full card meanings
+3. Agent reads only the specific card file(s) needed after cards are drawn
+4. All 22 Major Arcana cards work identically to v1.2 behavior
+
+---
+
+#### Phase 17: Minor Arcana Content
+
+**Goal:** All 56 Minor Arcana cards exist with full interpretive depth
+
+**Dependencies:** Phase 16 (architecture must support separate card files)
+
+**Requirements:**
+- CARD-01: Wands suit - 14 cards with full depth
+- CARD-02: Cups suit - 14 cards with full depth
+- CARD-03: Swords suit - 14 cards with full depth
+- CARD-04: Pentacles suit - 14 cards with full depth
+- CARD-05: Each card has themes, situations, shadows, symbols
+- CARD-06: Court cards have archetypal personality interpretations
+
+**Success Criteria:**
+1. User can draw any of 56 Minor Arcana cards and receive full interpretation
+2. Each pip card (Ace-10) includes themes, situations where it applies, shadow aspects, and symbols
+3. Each court card (Page, Knight, Queen, King) includes personality archetype interpretation
+4. Suit elemental associations are consistent (Wands=fire/will, Cups=water/emotion, Swords=air/intellect, Pentacles=earth/material)
+
+---
+
+#### Phase 18: Wizard Enhancement
+
+**Goal:** Users can choose between Major-only and Full 78-card deck
+
+**Dependencies:** Phase 16 (architecture), Phase 17 (content must exist)
+
+**Requirements:**
+- WIZD-01: Deck selection step in wizard
+- WIZD-02: Deck choice affects card pool for random draw
+- WIZD-03: Physical mode supports all 78 cards with fuzzy matching
+
+**Success Criteria:**
+1. Wizard presents deck choice before spread selection (Major Arcana only / Full 78-card deck)
+2. Digital mode random draw pulls only from selected deck
+3. Physical mode fuzzy matching recognizes all 78 card names (e.g., "3 of cups", "three cups", "III Cups")
+4. Default deck selection preserves backwards compatibility (Major-only as default)
+
+---
+
 ## Progress
 
-**Execution Order:** 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9 → 10 → 11 → 12 → 13 → 14 → 15
+**Execution Order:** 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8 -> 9 -> 10 -> 11 -> 12 -> 13 -> 14 -> 15 -> 16 -> 17 -> 18
 
 | Phase | Milestone | Plans Complete | Status | Completed |
 |-------|-----------|----------------|--------|-----------|
@@ -71,7 +138,10 @@ See: `.planning/milestones/v1.2-ROADMAP.md` for full details.
 | 13. Landing Page | v1.2 | 2/2 | Complete | 2026-01-25 |
 | 14. Launch Materials | v1.2 | 3/3 | Complete | 2026-01-26 |
 | 15. Set Up User Installation | v1.2 | 1/1 | Complete | 2026-01-26 |
+| 16. Architecture Refactor | v1.3 | 0/? | Pending | - |
+| 17. Minor Arcana Content | v1.3 | 0/? | Pending | - |
+| 18. Wizard Enhancement | v1.3 | 0/? | Pending | - |
 
 ---
 *Roadmap created: 2026-01-22*
-*Last updated: 2026-01-26 - v1.2 milestone archived*
+*Last updated: 2026-01-25 - v1.3 roadmap added*
