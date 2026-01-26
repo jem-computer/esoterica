@@ -5,17 +5,17 @@
 See: .planning/PROJECT.md (updated 2026-01-25)
 
 **Core value:** Agents can draw and interpret tarot cards as a perspective-shifting tool
-**Current focus:** v1.3 Minor Arcana — Phase 18 Wizard Enhancement
+**Current focus:** v1.3 Minor Arcana — SHIPPED
 
 ## Current Position
 
-Milestone: v1.3 Minor Arcana
-Phase: 18 - Wizard Enhancement — IN PROGRESS
-Plan: 2/3 complete (Card Index & Fuzzy Matching)
-Status: Plan 18-02 complete, ready for 18-03
-Last activity: 2026-01-26 — Completed 18-02-PLAN.md (Card Index & Fuzzy Matching)
+Milestone: v1.3 Minor Arcana — COMPLETE
+Phase: 18 - Wizard Enhancement — COMPLETE
+Plan: 2/2 complete (deck selection + fuzzy matching)
+Status: Milestone complete, ready for audit or v1.4
+Last activity: 2026-01-26 — Phase 18 complete (Wizard Enhancement)
 
-Progress: [███████████████░░░░░] 72% — 2.67/3 phases complete
+Progress: [████████████████████] 100% — 3/3 phases complete
 
 ## Performance Metrics
 
@@ -43,7 +43,7 @@ Progress: [███████████████░░░░░] 72% —
 | Phase 14 (Launch Materials) | 3 | ~39 min | ~13 min |
 | Phase 16 (Architecture Refactor) | 2 | 5 min | 2.5 min |
 | Phase 17 (Minor Arcana Content) | 4/4 | ~12 min | ~3 min |
-| Phase 18 (Wizard Enhancement) | 2/3 | ~3.7 min | ~1.9 min |
+| Phase 18 (Wizard Enhancement) | 2/2 | ~3.7 min | ~1.9 min |
 
 ## v1.3 Phase Status
 
@@ -51,7 +51,7 @@ Progress: [███████████████░░░░░] 72% —
 |-------|------|--------------|--------|
 | 16 | Architecture Refactor | ARCH-01 through ARCH-05 | Complete ✓ |
 | 17 | Minor Arcana Content | CARD-01 through CARD-06 | Complete ✓ |
-| 18 | Wizard Enhancement | WIZD-01 through WIZD-03 | In Progress (1/3) |
+| 18 | Wizard Enhancement | WIZD-01 through WIZD-03 | Complete ✓ |
 
 ## Accumulated Context
 
@@ -137,14 +137,13 @@ None.
 ## Session Continuity
 
 Last session: 2026-01-26
-Stopped at: Completed 18-02-PLAN.md (Card Index & Fuzzy Matching)
+Stopped at: Phase 18 complete — v1.3 shipped
 Resume file: None
 
 ## Next Steps
 
-1. Execute remaining Phase 18 plans (18-02, 18-03)
-2. Verify Phase 18 complete
-3. Ship v1.3
+1. `/gsd:audit-milestone` - Audit v1.3 before archiving
+2. Ship v1.3 (or create v1.4 roadmap)
 
 ### v1.2 Launch Checklist (Still Active)
 
@@ -156,4 +155,4 @@ Resume file: None
 - [ ] Share landing page URL: jem-computer.github.io/esoterica
 
 ---
-*Last updated: 2026-01-26 — Completed 18-02-PLAN.md (Card Index & Fuzzy Matching)*
+*Last updated: 2026-01-26 — Phase 18 complete (v1.3 Minor Arcana shipped)*
