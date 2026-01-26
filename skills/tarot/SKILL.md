@@ -300,6 +300,62 @@ Use this index to identify drawn cards. After drawing, read the appropriate card
 | 19 | The Sun | Major | Joy, clarity, vitality, success |
 | 20 | Judgement | Major | Awakening, reckoning, resurrection, calling |
 | 21 | The World | Major | Completion, integration, accomplishment, wholeness |
+| 22 | Ace of Wands | Wands | Creative spark, raw potential, inspired beginning |
+| 23 | Two of Wands | Wands | Planning, bold vision, choosing direction |
+| 24 | Three of Wands | Wands | Expansion underway, early success, enterprise |
+| 25 | Four of Wands | Wands | Celebration, stability, joyful milestone |
+| 26 | Five of Wands | Wands | Healthy competition, creative conflict, testing |
+| 27 | Six of Wands | Wands | Victory, public recognition, leadership celebrated |
+| 28 | Seven of Wands | Wands | Defending position, standing ground, courage |
+| 29 | Eight of Wands | Wands | Swift action, momentum unleashed, rapid progress |
+| 30 | Nine of Wands | Wands | Resilience, battle-weariness, persistence |
+| 31 | Ten of Wands | Wands | Burden of responsibility, carrying too much |
+| 32 | Page of Wands | Wands | Enthusiastic exploration, creative curiosity, eager messenger |
+| 33 | Knight of Wands | Wands | Charging forward, impulsive action, charismatic rush |
+| 34 | Queen of Wands | Wands | Confident mastery, charismatic warmth, creative authority |
+| 35 | King of Wands | Wands | Visionary leadership, entrepreneurial mastery, bold strategy |
+| 36 | Ace of Cups | Cups | New emotional beginning, opening heart, love offered |
+| 37 | Two of Cups | Cups | Partnership, mutual attraction, emotional connection |
+| 38 | Three of Cups | Cups | Celebration, friendship, community, shared joy |
+| 39 | Four of Cups | Cups | Contemplation, emotional apathy, withdrawal to reassess |
+| 40 | Five of Cups | Cups | Loss, grief, regret, focusing on what's gone |
+| 41 | Six of Cups | Cups | Nostalgia, childhood memories, past connections resurfacing |
+| 42 | Seven of Cups | Cups | Fantasy, illusion, difficult choices, imagination wild |
+| 43 | Eight of Cups | Cups | Walking away, emotional departure, seeking more |
+| 44 | Nine of Cups | Cups | Satisfaction, emotional fulfillment, wishes granted |
+| 45 | Ten of Cups | Cups | Emotional completion, family harmony, lasting happiness |
+| 46 | Page of Cups | Cups | Emotional beginner, sensitive messenger, creative dreaming |
+| 47 | Knight of Cups | Cups | Romantic pursuit, following heart, emotional quest |
+| 48 | Queen of Cups | Cups | Emotional mastery, compassionate presence, intuitive depth |
+| 49 | King of Cups | Cups | Emotional wisdom, balanced feeling, compassionate authority |
+| 50 | Ace of Swords | Swords | Breakthrough clarity, mental awakening, truth revealed |
+| 51 | Two of Swords | Swords | Difficult decision, stalemate, avoiding choice |
+| 52 | Three of Swords | Swords | Heartbreak, painful truth, necessary grief |
+| 53 | Four of Swords | Swords | Rest, mental retreat, recovery, meditation |
+| 54 | Five of Swords | Swords | Conflict, hollow victory, winning at others' expense |
+| 55 | Six of Swords | Swords | Transition, moving from difficulty, journey to calm |
+| 56 | Seven of Swords | Swords | Deception, strategy, getting away with something |
+| 57 | Eight of Swords | Swords | Mental imprisonment, feeling trapped, self-imposed limitation |
+| 58 | Nine of Swords | Swords | Anxiety, nightmare, worst fears, mental anguish |
+| 59 | Ten of Swords | Swords | Rock bottom, painful ending, defeat, worst happened |
+| 60 | Page of Swords | Swords | Curious mind, mental beginnings, vigilance, questioning |
+| 61 | Knight of Swords | Swords | Swift action, intellectual aggression, cutting through |
+| 62 | Queen of Swords | Swords | Clear perception, independent thinking, speaking truth |
+| 63 | King of Swords | Swords | Intellectual authority, fair judgment, mental mastery |
+| 64 | Ace of Pentacles | Pentacles | Material opportunity, new venture, seed of prosperity |
+| 65 | Two of Pentacles | Pentacles | Balance, juggling priorities, adaptability |
+| 66 | Three of Pentacles | Pentacles | Collaboration, skilled work, mastery through practice |
+| 67 | Four of Pentacles | Pentacles | Security, possession, control, conservation |
+| 68 | Five of Pentacles | Pentacles | Hardship, exclusion, material struggle, loss |
+| 69 | Six of Pentacles | Pentacles | Generosity, charity, giving and receiving, reciprocity |
+| 70 | Seven of Pentacles | Pentacles | Assessment, long-term investment, patience |
+| 71 | Eight of Pentacles | Pentacles | Skill development, dedication to craft, focused work |
+| 72 | Nine of Pentacles | Pentacles | Self-sufficiency, material comfort, independence |
+| 73 | Ten of Pentacles | Pentacles | Legacy, family wealth, inheritance, long-term security |
+| 74 | Page of Pentacles | Pentacles | Student energy, practical learning, new opportunity |
+| 75 | Knight of Pentacles | Pentacles | Methodical progress, reliability, hard work, patience |
+| 76 | Queen of Pentacles | Pentacles | Practical nurturing, material abundance, resourcefulness |
+| 77 | King of Pentacles | Pentacles | Financial mastery, business success, material authority |
 
 ## Card Data Files
 
