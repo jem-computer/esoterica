@@ -11,19 +11,19 @@ See: .planning/PROJECT.md (updated 2026-01-23)
 
 Milestone: v1.2 Brand & Marketing
 Phase: 14 of 14 (Launch Materials)
-Plan: 1 of 2
-Status: In progress
-Last activity: 2026-01-26 - Completed 14-01-PLAN.md
+Plan: 2 of 2
+Status: Phase complete
+Last activity: 2026-01-26 - Completed 14-02-PLAN.md
 
-Progress: [███████████████████░] 97% (14/14 phases, 1/2 plans in Phase 14)
+Progress: [████████████████████] 100% (14/14 phases, 2/2 plans in Phase 14 complete)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 20 (5 v1.0 + 5 v1.1 + 10 v1.2)
+- Total plans completed: 21 (5 v1.0 + 5 v1.1 + 11 v1.2)
 - Average duration (v1.1): 2.4 min
-- Average duration (v1.2): 4.9 min
-- Total execution time (v1.2): ~71 min
+- Average duration (v1.2): 7.6 min
+- Total execution time (v1.2): ~84 min
 
 **By Phase:**
 
@@ -38,7 +38,7 @@ Progress: [███████████████████░] 97% (14
 | Phase 11 (Documentation) | 1 | 1.4 min | 1.4 min |
 | Phase 12 (Visual Language) | 4 | 21.5 min | 5.4 min |
 | Phase 13 (Landing Page) | 2 | ~46 min | ~23 min |
-| Phase 14 (Launch Materials) | 1 | 1.2 min | 1.2 min |
+| Phase 14 (Launch Materials) | 2 | 14.2 min | 7.1 min |
 
 ## Accumulated Context
 
@@ -46,7 +46,13 @@ Progress: [███████████████████░] 97% (14
 
 All decisions logged in PROJECT.md Key Decisions table.
 
-**Recent (Phase 14 Plan 01):**
+**Recent (Phase 14 Plan 02):**
+- Remotion for programmatic video rendering instead of screen recording
+- 60-second demo with hook in first 15 seconds (card draw animation)
+- 5-sequence structure: title flash, card draw, interpretation, terminal, end card
+- Geist Mono fallback to Menlo/Monaco for terminal font
+
+**Phase 14 Plan 01:**
 - Keep announcement post concise at 800 chars instead of LinkedIn max 1,300-1,600 to maintain mystical impact
 - Use descriptive OG image alt text mentioning key visual elements for accessibility
 
@@ -96,6 +102,16 @@ All decisions logged in PROJECT.md Key Decisions table.
 **Plan 14-01:** LinkedIn launch materials and OG meta tags:
 - `brand/launch/linkedin-posts.md` - Teaser (402 chars) and announcement (800 chars) posts in cosmic priestess voice
 - `docs/index.html` - Complete OG meta tags (og:image:width, og:image:height, og:image:type, og:image:alt, og:site_name, twitter:image:alt)
+
+**Plan 14-02:** Remotion demo video project:
+- `demo/package.json` - Remotion dependencies and build scripts
+- `demo/remotion.config.ts` - Video output configuration
+- `demo/tsconfig.json` - TypeScript configuration for React JSX
+- `demo/src/Root.tsx` - Remotion composition registry (60s at 30fps, 1920x1080)
+- `demo/src/Demo.tsx` - Main demo composition with 5 sequences
+- `demo/src/WizardFlow.tsx` - Scene components (install, cards, interpretation, endcard)
+- `demo/src/styles.ts` - Brand colors and fonts from COLOR_PALETTE.md
+- `demo/.gitignore` - Ignore node_modules and out directories
 
 ### Phase 13 Deliverables
 
@@ -174,15 +190,30 @@ None.
 ## Session Continuity
 
 Last session: 2026-01-26
-Stopped at: Completed 14-01-PLAN.md
+Stopped at: Completed 14-02-PLAN.md (Phase 14 complete)
 Resume file: None
 
 ## Next Steps
 
-1. Phase 14 Plan 01 complete - LinkedIn posts ready, OG tags complete
-2. Test OG tags at https://metatags.io/ with landing page URL
-3. Continue to Phase 14 Plan 02: Demo GIF/video creation
-4. Final launch checklist and polish
+1. **Phase 14 complete** - All launch materials ready:
+   - LinkedIn posts written (teaser + announcement)
+   - OG meta tags complete on landing page
+   - Remotion demo video project ready to render
+
+2. **Render demo video:**
+   - Preview: `cd demo && npm run dev`
+   - Render MP4: `cd demo && npm run build`
+   - Optional GIF: `cd demo && npm run build:gif`
+
+3. **Launch checklist:**
+   - [ ] Test OG tags at https://metatags.io/
+   - [ ] Render and review demo video
+   - [ ] Enable GitHub Pages (Settings → Pages → main → /docs)
+   - [ ] Post LinkedIn teaser
+   - [ ] Post LinkedIn announcement with demo video
+   - [ ] Share landing page URL
+
+4. **v1.2 Brand & Marketing milestone COMPLETE** (14/14 phases)
 
 ---
-*Last updated: 2026-01-26 after Phase 14 Plan 01 completion*
+*Last updated: 2026-01-26 after Phase 14 completion*
