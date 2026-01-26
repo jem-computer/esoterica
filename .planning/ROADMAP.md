@@ -74,6 +74,12 @@ See: `.planning/milestones/v1.2-ROADMAP.md` for full details.
 3. Agent reads only the specific card file(s) needed after cards are drawn
 4. All 22 Major Arcana cards work identically to v1.2 behavior
 
+**Plans:** 2 plans
+
+Plans:
+- [ ] 16-01-PLAN.md - Create card data files (major-arcana.md + suit placeholders)
+- [ ] 16-02-PLAN.md - Refactor SKILL.md with card index and loading instructions
+
 ---
 
 #### Phase 17: Minor Arcana Content
@@ -138,10 +144,10 @@ See: `.planning/milestones/v1.2-ROADMAP.md` for full details.
 | 13. Landing Page | v1.2 | 2/2 | Complete | 2026-01-25 |
 | 14. Launch Materials | v1.2 | 3/3 | Complete | 2026-01-26 |
 | 15. Set Up User Installation | v1.2 | 1/1 | Complete | 2026-01-26 |
-| 16. Architecture Refactor | v1.3 | 0/? | Pending | - |
+| 16. Architecture Refactor | v1.3 | 0/2 | Pending | - |
 | 17. Minor Arcana Content | v1.3 | 0/? | Pending | - |
 | 18. Wizard Enhancement | v1.3 | 0/? | Pending | - |
 
 ---
 *Roadmap created: 2026-01-22*
-*Last updated: 2026-01-25 - v1.3 roadmap added*
+*Last updated: 2026-01-25 - Phase 16 planned (2 plans)*
