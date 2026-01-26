@@ -18,9 +18,9 @@ Requirements for Minor Arcana milestone. Each maps to roadmap phases.
 
 ### Wizard Enhancement
 
-- [ ] **WIZD-01**: Deck selection step in wizard ("Major Arcana only" vs "Full 78-card deck")
-- [ ] **WIZD-02**: Deck choice affects card pool for random draw
-- [ ] **WIZD-03**: Physical mode supports all 78 cards with fuzzy matching
+- [x] **WIZD-01**: Deck selection step in wizard ("Major Arcana only" vs "Full 78-card deck")
+- [x] **WIZD-02**: Deck choice affects card pool for random draw
+- [x] **WIZD-03**: Physical mode supports all 78 cards with fuzzy matching
 
 ### Architecture
 
@@ -73,9 +73,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CARD-04 | Phase 17 | Complete |
 | CARD-05 | Phase 17 | Complete |
 | CARD-06 | Phase 17 | Complete |
-| WIZD-01 | Phase 18 | Pending |
-| WIZD-02 | Phase 18 | Pending |
-| WIZD-03 | Phase 18 | Pending |
+| WIZD-01 | Phase 18 | Complete |
+| WIZD-02 | Phase 18 | Complete |
+| WIZD-03 | Phase 18 | Complete |
 
 **Coverage:**
 - v1.3 requirements: 14 total
@@ -84,4 +84,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-01-25*
-*Last updated: 2026-01-26 after Phase 17 completion*
+*Last updated: 2026-01-26 — v1.3 complete (14/14 requirements satisfied)*
