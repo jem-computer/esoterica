@@ -11,21 +11,21 @@ See: .planning/PROJECT.md (updated 2026-01-25)
 
 Milestone: v1.3 Minor Arcana
 Phase: 17 - Minor Arcana Content — IN PROGRESS
-Plan: 3 of 6 complete (Wands, Cups, Swords complete; Pentacles remaining)
+Plan: 4 of 6 complete (All 4 suits complete; integration plans remaining)
 Status: Executing wave 1 content creation
-Last activity: 2026-01-26 — Completed 17-03-PLAN.md (Swords suit)
+Last activity: 2026-01-26 — Completed 17-04-PLAN.md (Pentacles suit)
 
 Progress: [███████░░░░░░░░░░░░░] 33% — 1/3 phases complete
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 27 (5 v1.0 + 5 v1.1 + 12 v1.2 + 5 v1.3)
+- Total plans completed: 28 (5 v1.0 + 5 v1.1 + 12 v1.2 + 6 v1.3)
 - Average duration (v1.1): 2.4 min
 - Average duration (v1.2): 7.6 min
-- Average duration (v1.3): 2.4 min
+- Average duration (v1.3): 2.3 min
 - Total execution time (v1.2): ~84 min
-- Total execution time (v1.3): ~11 min
+- Total execution time (v1.3): ~13 min
 
 **By Phase:**
 
@@ -42,14 +42,14 @@ Progress: [███████░░░░░░░░░░░░░] 33% —
 | Phase 13 (Landing Page) | 2 | ~46 min | ~23 min |
 | Phase 14 (Launch Materials) | 3 | ~39 min | ~13 min |
 | Phase 16 (Architecture Refactor) | 2 | 5 min | 2.5 min |
-| Phase 17 (Minor Arcana Content) | 3/6 | 6 min | 2 min |
+| Phase 17 (Minor Arcana Content) | 4/6 | 8 min | 2 min |
 
 ## v1.3 Phase Status
 
 | Phase | Goal | Requirements | Status |
 |-------|------|--------------|--------|
 | 16 | Architecture Refactor | ARCH-01 through ARCH-05 | Complete ✓ |
-| 17 | Minor Arcana Content | CARD-01 through CARD-06 | In Progress (3/6) |
+| 17 | Minor Arcana Content | CARD-01 through CARD-06 | In Progress (4/6) |
 | 18 | Wizard Enhancement | WIZD-01 through WIZD-03 | Blocked by 17 |
 
 ## Accumulated Context
@@ -93,6 +93,12 @@ All decisions logged in PROJECT.md Key Decisions table.
 - Emphasized concrete situations over abstract keywords throughout Swords suit
 - Maintained voice consistency with Major Arcana quality
 
+**Phase 17-04 Decisions:**
+- Pip cards (Ace-10) follow journey progression narrative
+- Court cards embed archetypal personality in Themes rather than separate section
+- All situations are concrete scenarios (e.g., "Starting a business") not abstract keywords
+- Earth element expressed through material/work/body/finances/practical concerns
+
 ### Previous Milestone Deliverables
 
 **v1.2 Shipped 2026-01-26:**
@@ -119,7 +125,7 @@ None.
 ## Session Continuity
 
 Last session: 2026-01-26
-Stopped at: Completed 17-03-PLAN.md — Swords suit complete
+Stopped at: Completed 17-04-PLAN.md — Pentacles suit complete
 Resume file: None
 
 ## Next Steps
@@ -140,4 +146,4 @@ Resume file: None
 - [ ] Share landing page URL: jem-computer.github.io/esoterica
 
 ---
-*Last updated: 2026-01-26 — Phase 17 plan 03 complete (Swords suit)*
+*Last updated: 2026-01-26 — Phase 17 plan 04 complete (Pentacles suit)*
