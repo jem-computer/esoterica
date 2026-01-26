@@ -10,12 +10,12 @@ See: .planning/PROJECT.md (updated 2026-01-25)
 ## Current Position
 
 Milestone: v1.3 Minor Arcana
-Phase: 16 - Architecture Refactor (2 of 5 plans complete)
-Plan: 16-02 complete
-Status: In progress
-Last activity: 2026-01-26 — Completed 16-02-PLAN.md (SKILL orchestration refactor)
+Phase: 16 - Architecture Refactor — COMPLETE
+Plan: All plans complete
+Status: Ready for Phase 17
+Last activity: 2026-01-26 — Phase 16 verified and complete
 
-Progress: [██░░░░░░░░░░░░░░░░░░] 10% — 2/20 plans complete (16-01, 16-02)
+Progress: [███████░░░░░░░░░░░░░] 33% — 1/3 phases complete
 
 ## Performance Metrics
 
@@ -47,9 +47,9 @@ Progress: [██░░░░░░░░░░░░░░░░░░] 10% —
 
 | Phase | Goal | Requirements | Status |
 |-------|------|--------------|--------|
-| 16 | Architecture Refactor | ARCH-01 through ARCH-05 | In progress (2/5 plans complete) |
-| 17 | Minor Arcana Content | CARD-01 through CARD-06 | Blocked by 16 |
-| 18 | Wizard Enhancement | WIZD-01 through WIZD-03 | Blocked by 16, 17 |
+| 16 | Architecture Refactor | ARCH-01 through ARCH-05 | Complete ✓ |
+| 17 | Minor Arcana Content | CARD-01 through CARD-06 | Ready |
+| 18 | Wizard Enhancement | WIZD-01 through WIZD-03 | Blocked by 17 |
 
 ## Accumulated Context
 
@@ -101,18 +101,16 @@ None.
 ## Session Continuity
 
 Last session: 2026-01-26
-Stopped at: Completed 16-02-PLAN.md (SKILL orchestration refactor)
+Stopped at: Phase 16 complete — Architecture Refactor verified
 Resume file: None
 
 ## Next Steps
 
-1. `/gsd:plan-phase 16` - Create plan for Architecture Refactor
-2. Execute Phase 16 plans
-3. `/gsd:plan-phase 17` - Create plan for Minor Arcana Content
-4. Execute Phase 17 plans
-5. `/gsd:plan-phase 18` - Create plan for Wizard Enhancement
-6. Execute Phase 18 plans
-7. Ship v1.3
+1. `/gsd:plan-phase 17` - Create plan for Minor Arcana Content
+2. Execute Phase 17 plans
+3. `/gsd:plan-phase 18` - Create plan for Wizard Enhancement
+4. Execute Phase 18 plans
+5. Ship v1.3
 
 ### v1.2 Launch Checklist (Still Active)
 
@@ -124,4 +122,4 @@ Resume file: None
 - [ ] Share landing page URL: jem-computer.github.io/esoterica
 
 ---
-*Last updated: 2026-01-26 — Completed 16-02-PLAN.md*
+*Last updated: 2026-01-26 — Phase 16 complete*
