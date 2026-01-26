@@ -105,10 +105,10 @@ Plans:
 **Plans:** 4 plans
 
 Plans:
-- [ ] 17-01-PLAN.md — Complete Wands suit (14 cards)
-- [ ] 17-02-PLAN.md — Complete Cups suit (14 cards)
-- [ ] 17-03-PLAN.md — Complete Swords suit (14 cards)
-- [ ] 17-04-PLAN.md — Complete Pentacles suit (14 cards)
+- [x] 17-01-PLAN.md — Complete Wands suit (14 cards)
+- [x] 17-02-PLAN.md — Complete Cups suit (14 cards)
+- [x] 17-03-PLAN.md — Complete Swords suit (14 cards)
+- [x] 17-04-PLAN.md — Complete Pentacles suit (14 cards)
 
 ---
 
@@ -153,9 +153,9 @@ Plans:
 | 14. Launch Materials | v1.2 | 3/3 | Complete | 2026-01-26 |
 | 15. Set Up User Installation | v1.2 | 1/1 | Complete | 2026-01-26 |
 | 16. Architecture Refactor | v1.3 | 2/2 | Complete | 2026-01-26 |
-| 17. Minor Arcana Content | v1.3 | 0/4 | Pending | - |
+| 17. Minor Arcana Content | v1.3 | 4/4 | Complete | 2026-01-26 |
 | 18. Wizard Enhancement | v1.3 | 0/? | Pending | - |
 
 ---
 *Roadmap created: 2026-01-22*
-*Last updated: 2026-01-26 - Phase 17 planned*
+*Last updated: 2026-01-26 - Phase 17 complete*
