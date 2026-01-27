@@ -14,7 +14,7 @@ Esoterica is a tarot framework for AI agents — 78 cards waiting to reframe you
 
 **For practitioners:** Your tarot practice, integrated into your development workflow — digital cards that speak through AI voices with the depth you expect.
 
-**Technical truth:** 78 cards (Major and Minor Arcana), 4 spread types, 2 interpretive voices (Mystic and Direct), full RWS imagery, reading history, CLI-native.
+**Technical truth:** 78 cards (Major and Minor Arcana), 4 spread types, 2 interpretive voices (Mystic and Grounded), CLI-native.
 
 ---
 
@@ -40,9 +40,10 @@ In Claude Code, invoke the tarot skill:
 /tarot
 ```
 
-The wizard guides you through three choices:
+The wizard guides you through four choices:
 - Your question or context
 - Which spread to use
+- Which deck (Major Arcana only or Full 78-card deck)
 - Digital draw or physical deck
 
 The cards cross the threshold. Your reading begins.
@@ -91,7 +92,7 @@ Two voices interpret the same cards through different lenses.
 **Mystic voice** — cosmic priestess energy, poetic and pattern-seeing:
 > "The Tower rises from the cards — lightning splitting what seemed solid..."
 
-**Direct voice** — pragmatic advisor, clear and actionable:
+**Grounded voice** — pragmatic advisor, clear and actionable:
 > "You drew The Tower. This is the 'things break' card, but in a useful way..."
 
 Configure your preferred voice:
@@ -100,7 +101,7 @@ Configure your preferred voice:
 # Project-level (in your repo root)
 echo "voice=mystic" > .tarot
 
-# Global default
+# Global default (grounded is the default voice)
 mkdir -p ~/.claude/tarot
 echo "voice=grounded" > ~/.claude/tarot/config
 ```
