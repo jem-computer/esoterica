@@ -85,6 +85,20 @@ Name your own positions (1-5 cards). The cards adapt to how you frame them.
 > Mode: Digital
 ```
 
+### Physical Deck Mode
+
+Use your own cards — shuffle physically, enter what you draw.
+
+```
+/tarot
+> Question: Decision I'm facing
+> Spread: Single card
+> Deck: Major Arcana only
+> Mode: Physical deck
+```
+
+The wizard guides you through entering your drawn card(s) with flexible input (card names, numbers, or abbreviations).
+
 ### Voice Selection
 
 Two voices interpret the same cards through different lenses.
@@ -125,6 +139,8 @@ Esoterica bridges ancient symbolic systems and modern AI agents because both dea
 **Major Arcana (22 cards):** The Fool through The World — the archetypal journey.
 
 **Minor Arcana (56 cards):** Four suits (Wands, Cups, Swords, Pentacles) with pip cards and court cards.
+
+During readings, choose Major Arcana only (22 cards) for focused archetypal readings, or the full 78-card deck for complete tarot experience.
 
 **Spreads:** Single card, Three-card (Situation/Action/Outcome), Claude-suggested (contextual positions), and Custom (your own positions).
 
