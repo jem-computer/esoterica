@@ -11,16 +11,16 @@ See: .planning/PROJECT.md (updated 2026-01-28)
 
 Milestone: v1.4 Website Upgrade
 Phase: 19 of 22 (Scroll Video)
-Plan: --
-Status: Ready to plan
-Last activity: 2026-01-28 -- Roadmap created for v1.4 (Phases 19-22)
+Plan: 01 of 02
+Status: In progress
+Last activity: 2026-01-28 -- Completed 19-01-PLAN.md (video compression)
 
-Progress: [==================..] 86% (18/22 phases complete; 30 plans shipped)
+Progress: [==================..] 86% (18/22 phases complete; 31 plans shipped)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 30 (5 v1.0 + 5 v1.1 + 12 v1.2 + 8 v1.3)
+- Total plans completed: 31 (5 v1.0 + 5 v1.1 + 12 v1.2 + 8 v1.3 + 1 v1.4)
 - Average duration (v1.1): 2.4 min
 - Average duration (v1.2): 7.6 min
 - Average duration (v1.3): 2.0 min
@@ -51,11 +51,16 @@ All decisions logged in PROJECT.md Key Decisions table.
 
 **v1.4 Roadmap:**
 - 4 phases derived from 6 requirements (depth=quick)
-- Canvas + WebP frame sequence over video element scrubbing (research HIGH confidence)
+- Video element with scroll-driven currentTime (NOT canvas + frame images)
 - Vanilla JS only -- zero runtime dependencies preserved
-- ffmpeg for build-time frame extraction
+- ffmpeg for video compression
 - Phase 21 (illustrations) independent of video phases -- could parallelize
 - Source video: /Users/jem/Downloads/weavy-Kling First & Last Frame-2026-01-28 at 11.59.12.mp4
+
+**19-01 Video Compression:**
+- CRF 28 yields 1.8MB from 25MB source (93% reduction)
+- h264 Main profile, Level 4.0, faststart, no audio
+- Video directory gitignored as build artifact
 
 ### Pending Todos
 
@@ -73,12 +78,12 @@ None.
 ## Session Continuity
 
 Last session: 2026-01-28
-Stopped at: v1.4 roadmap created -- ready to plan Phase 19
+Stopped at: Completed 19-01-PLAN.md (video compression)
 Resume file: None
 
 ## Next Steps
 
-1. Plan Phase 19 (Scroll Video)
+1. Execute Plan 02 of Phase 19 (scroll scrubber component)
 
 ---
-*Last updated: 2026-01-28 -- v1.4 roadmap created*
+*Last updated: 2026-01-28 -- Completed 19-01 video compression*
