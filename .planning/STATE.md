@@ -5,17 +5,17 @@
 See: .planning/PROJECT.md (updated 2026-01-26)
 
 **Core value:** Agents can draw and interpret tarot cards as a perspective-shifting tool
-**Current focus:** Planning next milestone
+**Current focus:** v1.4 Website Upgrade
 
 ## Current Position
 
-Milestone: v1.3 Minor Arcana — ARCHIVED
-Phase: Ready for v1.4
-Plan: Not started
-Status: Milestone complete and archived
-Last activity: 2026-01-27 — Completed quick task 002: Astro migration with 96% hero image reduction
+Milestone: v1.4 Website Upgrade
+Phase: Not started (defining requirements)
+Plan: —
+Status: Defining requirements
+Last activity: 2026-01-28 — Milestone v1.4 started
 
-Progress: Ready for new milestone
+Progress: Defining requirements
 
 ## Performance Metrics
 
@@ -147,7 +147,7 @@ Resume file: None
 
 ## Next Steps
 
-1. `/gsd:new-milestone` — Start v1.4 planning (questioning → research → requirements → roadmap)
+1. Define requirements and create roadmap for v1.4
 
 ### v1.2 Launch Checklist (Still Active)
 
@@ -159,4 +159,4 @@ Resume file: None
 - [ ] Share landing page URL: jem-computer.github.io/esoterica
 
 ---
-*Last updated: 2026-01-27 — quick-002 completed*
+*Last updated: 2026-01-28 — v1.4 milestone started*

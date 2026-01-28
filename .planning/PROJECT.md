@@ -96,7 +96,13 @@ Agents can draw and interpret tarot cards as a perspective-shifting tool for pro
 
 ### Active
 
-(Define in v1.4)
+**v1.4 — Website Upgrade:**
+- [ ] Scroll-scrubbed hero video (Apple-style, playback tied to scroll position)
+- [ ] Compress and integrate AI-generated hero video
+- [ ] Gateway Process-style illustrations for landing page
+- [ ] Illustration prompt generation for Nano Banana Pro
+- [ ] Page layout for illustrations (interspersed with prose or 3-col grid)
+- [ ] Footer with copyright and links
 
 ### Out of Scope
 
@@ -157,4 +163,4 @@ Agents can draw and interpret tarot cards as a perspective-shifting tool for pro
 - [ ] Reversed card meanings (v1.4 candidate)
 
 ---
-*Last updated: 2026-01-26 after v1.3 milestone shipped*
+*Last updated: 2026-01-28 after v1.4 milestone started*
