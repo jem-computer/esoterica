@@ -13,7 +13,7 @@ Milestone: v1.3 Minor Arcana — ARCHIVED
 Phase: Ready for v1.4
 Plan: Not started
 Status: Milestone complete and archived
-Last activity: 2026-01-27 — Completed quick task 001: README accuracy update
+Last activity: 2026-01-27 — Completed quick task 002: Astro migration with 96% hero image reduction
 
 Progress: Ready for new milestone
 
@@ -139,11 +139,12 @@ None.
 | # | Description | Date | Commit | Directory |
 |---|-------------|------|--------|-----------|
 | 001 | Review README and update for current feature set | 2026-01-27 | 16113db | [001-review-readme-and-update-for-current-fea](./quick/001-review-readme-and-update-for-current-fea/) |
+| 002 | Migrate landing page to Astro (hero 7.1MB → 268KB) | 2026-01-27 | 50316e9 | [002-migrate-landing-page-to-astro](./quick/002-migrate-landing-page-to-astro/) |
 
 ## Session Continuity
 
-Last session: 2026-01-26
-Stopped at: Phase 18 complete — v1.3 shipped
+Last session: 2026-01-27
+Stopped at: Quick task 002 complete — Astro migration
 Resume file: None
 
 ## Next Steps
@@ -160,4 +161,4 @@ Resume file: None
 - [ ] Share landing page URL: jem-computer.github.io/esoterica
 
 ---
-*Last updated: 2026-01-27 — quick-001 completed*
+*Last updated: 2026-01-27 — quick-002 completed*
