@@ -15,6 +15,8 @@
   const hero = document.querySelector('.hero');
   if (!hero) return;
 
+  const scrollHint = document.querySelector('.scroll-hint');
+
   let ticking = false;
 
   function updateVideoTime() {
@@ -27,6 +29,14 @@
 
     if (video.duration && isFinite(video.duration)) {
       video.currentTime = progress * video.duration;
+    }
+
+    if (scrollHint) {
+      if (progress > 0.2) {
+        scrollHint.style.opacity = '0';
+      } else {
+        scrollHint.style.removeProperty('opacity');
+      }
     }
   }
 
