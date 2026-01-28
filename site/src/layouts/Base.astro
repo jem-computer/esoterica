@@ -1,0 +1,69 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Esoterica - Ancient patterns, new paths',
+  description = 'A tarot reading skill for Claude agents. Ancient patterns for modern decision-making.'
+} = Astro.props;
+
+const siteUrl = 'https://jem-computer.github.io/esoterica/';
+const ogImage = `${siteUrl}og-image.png`;
+---
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content={description}>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content={description}>
+  <meta property="og:image" content={ogImage}>
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Sacred altar in Joshua Tree with tarot cards and crystal-computer displaying esoterica interface">
+  <meta property="og:url" content={siteUrl}>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Esoterica">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={title}>
+  <meta name="twitter:description" content={description}>
+  <meta name="twitter:image" content={ogImage}>
+  <meta name="twitter:image:alt" content="Sacred altar in Joshua Tree with tarot cards and crystal-computer displaying esoterica interface">
+
+  <title>{title}</title>
+
+  <!-- Favicons -->
+  <link rel="icon" href="/esoterica/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/esoterica/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/esoterica/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="/esoterica/apple-touch-icon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Theme Detection - Prevent FOUC -->
+  <script is:inline>
+    (function() {
+      const theme = localStorage.getItem('theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+  <slot />
+</body>
+</html>
