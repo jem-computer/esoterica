@@ -69,7 +69,7 @@ See: `.planning/milestones/v1.3-ROADMAP.md` for full details.
 **Milestone Goal:** Transform the landing page from static hero image to an immersive scroll-driven video experience with Gateway Process illustrations and proper site footer.
 
 - [x] **Phase 19: Scroll Video** - Scroll-driven video hero with `<video>` element currentTime mapping
-- [ ] **Phase 20: Mobile + Accessibility** - Mobile fallback, reduced-motion support, scroll hint
+- [x] **Phase 20: Mobile + Accessibility** - Mobile fallback, reduced-motion support, scroll hint
 - [ ] **Phase 21: Gateway Illustrations** - Illustration prompts, integration, hybrid layout
 - [ ] **Phase 22: Footer + Polish** - Site footer, loading states, Lighthouse audit
 
@@ -102,8 +102,8 @@ Plans:
   5. Canvas resizes correctly when viewport dimensions change
 **Plans:** 2 plans
 Plans:
-- [ ] 20-01-PLAN.md -- Reduced-motion support, poster extraction, viewport resize handling
-- [ ] 20-02-PLAN.md -- Scroll hint element with delayed appearance and scroll fade
+- [x] 20-01-PLAN.md -- Reduced-motion support, poster extraction, viewport resize handling
+- [x] 20-02-PLAN.md -- Scroll hint element with delayed appearance and scroll fade
 
 ### Phase 21: Gateway Illustrations
 **Goal**: The landing page features Gateway Process-style illustrations that explain Esoterica's concepts
@@ -167,10 +167,10 @@ Coverage: 6/6 requirements mapped.
 | 17. Minor Arcana Content | v1.3 | 4/4 | Complete | 2026-01-26 |
 | 18. Wizard Enhancement | v1.3 | 2/2 | Complete | 2026-01-26 |
 | 19. Scroll Video | v1.4 | 2/2 | Complete | 2026-01-28 |
-| 20. Mobile + Accessibility | v1.4 | 0/2 | Planned | - |
+| 20. Mobile + Accessibility | v1.4 | 2/2 | Complete | 2026-01-28 |
 | 21. Gateway Illustrations | v1.4 | 0/TBD | Not started | - |
 | 22. Footer + Polish | v1.4 | 0/TBD | Not started | - |
 
 ---
 *Roadmap created: 2026-01-22*
-*Last updated: 2026-01-28 -- Phase 19 complete (scroll-driven video hero)*
+*Last updated: 2026-01-28 -- Phase 20 complete (mobile + accessibility)*
