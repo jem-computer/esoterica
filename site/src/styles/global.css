@@ -86,6 +86,10 @@ body {
   z-index: 0;
 }
 
+.hero-bg-poster {
+  display: none;
+}
+
 .hero-sticky::before {
   content: '';
   position: absolute;
@@ -340,5 +344,32 @@ body {
 @media (min-width: 768px) {
   .tagline {
     font-size: 4.5rem;
+  }
+}
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  .hero {
+    height: 100vh;
+    height: 100svh;
+  }
+
+  .hero-bg-video {
+    display: none;
+  }
+
+  .hero-bg-poster {
+    display: block;
+  }
+
+  .tagline, .description, .install {
+    opacity: 1 !important;
+    transform: none !important;
   }
 }

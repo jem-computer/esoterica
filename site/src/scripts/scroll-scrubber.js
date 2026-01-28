@@ -1,4 +1,14 @@
 (function() {
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (prefersReducedMotion.matches) {
+    const vid = document.getElementById('scroll-video');
+    if (vid) {
+      vid.removeAttribute('src');
+      vid.load();
+    }
+    return;
+  }
+
   const video = document.getElementById('scroll-video');
   if (!video) return;
 
@@ -31,4 +41,13 @@
 
   video.addEventListener('loadedmetadata', updateVideoTime);
   window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', function() {
+    if (!ticking) {
+      ticking = true;
+      requestAnimationFrame(function() {
+        updateVideoTime();
+        ticking = false;
+      });
+    }
+  }, { passive: true });
 })();
