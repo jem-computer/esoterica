@@ -5,22 +5,22 @@
 See: .planning/PROJECT.md (updated 2026-01-28)
 
 **Core value:** Agents can draw and interpret tarot cards as a perspective-shifting tool
-**Current focus:** v1.4 Website Upgrade -- Phase 22 in progress
+**Current focus:** v1.4 Website Upgrade complete
 
 ## Current Position
 
 Milestone: v1.4 Website Upgrade
 Phase: 22 of 22 (Footer + Polish)
-Plan: 01 of 02 (Chrome Scroll Fix)
-Status: In progress
-Last activity: 2026-01-29 -- Completed 22-01-PLAN.md (Chrome scroll fix)
+Plan: 02 of 02 (Footer & Quality Audit)
+Status: Milestone complete
+Last activity: 2026-01-29 -- Completed Phase 22, v1.4 shipped
 
-Progress: [====================] 97% (21/22 phases complete; 37 plans shipped)
+Progress: [====================] 100% (22/22 phases complete; 38 plans shipped)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 36 (5 v1.0 + 5 v1.1 + 12 v1.2 + 8 v1.3 + 6 v1.4)
+- Total plans completed: 38 (5 v1.0 + 5 v1.1 + 12 v1.2 + 8 v1.3 + 8 v1.4)
 - Average duration (v1.1): 2.4 min
 - Average duration (v1.2): 7.6 min
 - Average duration (v1.3): 2.0 min
@@ -45,7 +45,7 @@ Progress: [====================] 97% (21/22 phases complete; 37 plans shipped)
 | Phase 19 (Scroll Video) | 2 | ~10 min | ~5 min |
 | Phase 20 (Mobile + A11y) | 2 | ~4 min | ~2 min |
 | Phase 21 (Illustrations) | 2 | ~3 hrs | ~1.5 hrs |
-| Phase 22 (Footer + Polish) | 1 | ~1.7 min | ~1.7 min |
+| Phase 22 (Footer + Polish) | 2 | ~7 min | ~3.5 min |
 
 ## Accumulated Context
 
@@ -90,11 +90,13 @@ All decisions logged in PROJECT.md Key Decisions table.
 - IntersectionObserver scroll reveal with threshold 0.15, rootMargin -50px
 - Archive saved to ~/Pictures/esoterica-illustrations-archive/
 
-**Phase 22 Chrome Scroll Fix:**
-- Re-encoded hero.mp4 with keyframes every 10 frames (25 I-frames)
-- CRF 32 for 2.6MB file size (originally 3.8MB at CRF 28)
+**Phase 22 Footer + Polish:**
+- Re-encoded hero.mp4 with keyframes every 10 frames (25 I-frames) for Chrome scroll
+- CRF 28 for 2.6MB file size (tradeoff: larger but smooth seeking)
 - canplaythrough event + 3s timeout fallback for poster hiding
-- Video readiness pattern: canplaythrough listener with { once: true }
+- Semantic footer with Temple of Silicon link to github.com/temple-of-silicon
+- Lighthouse score: 94 (desktop)
+- Cross-browser verified: Chrome, Safari, Firefox, Edge
 
 ### Pending Todos
 
@@ -119,12 +121,13 @@ None.
 ## Session Continuity
 
 Last session: 2026-01-29
-Stopped at: Completed 22-01-PLAN.md (Chrome scroll fix)
+Stopped at: Milestone v1.4 complete
 Resume file: None
 
 ## Next Steps
 
-1. Execute 22-02-PLAN.md (Footer remaining work)
+1. Run `/gsd:audit-milestone` to verify v1.4 before archiving
+2. Or `/gsd:complete-milestone` to archive and prepare for next version
 
 ---
-*Last updated: 2026-01-29 -- Completed 22-01-PLAN.md (Chrome scroll fix)*
+*Last updated: 2026-01-29 -- v1.4 Website Upgrade milestone complete*

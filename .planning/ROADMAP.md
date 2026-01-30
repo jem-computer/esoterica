@@ -6,7 +6,7 @@
 - **v1.1 Wizard UI** - Phases 6-9 (shipped 2026-01-23)
 - **v1.2 Brand & Marketing** - Phases 10-15 (shipped 2026-01-26)
 - **v1.3 Minor Arcana** - Phases 16-18 (shipped 2026-01-26)
-- **v1.4 Website Upgrade** - Phases 19-22 (in progress)
+- **v1.4 Website Upgrade** - Phases 19-22 (shipped 2026-01-29)
 
 ## Phases
 
@@ -71,7 +71,7 @@ See: `.planning/milestones/v1.3-ROADMAP.md` for full details.
 - [x] **Phase 19: Scroll Video** - Scroll-driven video hero with `<video>` element currentTime mapping
 - [x] **Phase 20: Mobile + Accessibility** - Mobile fallback, reduced-motion support, scroll hint
 - [x] **Phase 21: Gateway Illustrations** - Illustration prompts, integration, hybrid layout
-- [ ] **Phase 22: Footer + Polish** - Site footer, loading states, Lighthouse audit
+- [x] **Phase 22: Footer + Polish** - Site footer, loading states, Lighthouse audit
 
 ## Phase Details
 
@@ -130,8 +130,8 @@ Plans:
   4. Site renders correctly in Chrome, Safari, Firefox, and Edge
 **Plans:** 2 plans
 Plans:
-- [ ] 22-01-PLAN.md -- Re-encode video with keyframes for Chrome performance, add loading state
-- [ ] 22-02-PLAN.md -- Implement semantic footer, run Lighthouse audit, cross-browser verification
+- [x] 22-01-PLAN.md -- Re-encode video with keyframes for Chrome performance, add loading state
+- [x] 22-02-PLAN.md -- Implement semantic footer, run Lighthouse audit, cross-browser verification
 
 ## Requirement Coverage
 
@@ -142,7 +142,7 @@ Plans:
 | WEB-03 | Gateway Process-style illustrations | Phase 21 | Complete |
 | WEB-04 | Illustration prompt generation for Nano Banana Pro | Phase 21 | Complete |
 | WEB-05 | Page layout for illustrations | Phase 21 | Complete |
-| WEB-06 | Footer with copyright and links | Phase 22 | Pending |
+| WEB-06 | Footer with copyright and links | Phase 22 | Complete |
 
 Coverage: 6/6 requirements mapped.
 
@@ -175,8 +175,8 @@ Coverage: 6/6 requirements mapped.
 | 19. Scroll Video | v1.4 | 2/2 | Complete | 2026-01-28 |
 | 20. Mobile + Accessibility | v1.4 | 2/2 | Complete | 2026-01-28 |
 | 21. Gateway Illustrations | v1.4 | 2/2 | Complete | 2026-01-29 |
-| 22. Footer + Polish | v1.4 | 0/2 | Not started | - |
+| 22. Footer + Polish | v1.4 | 2/2 | Complete | 2026-01-29 |
 
 ---
 *Roadmap created: 2026-01-22*
-*Last updated: 2026-01-29 -- Phase 22 planned (2 plans in 2 waves)*
+*Last updated: 2026-01-29 -- Phase 22 complete, v1.4 Website Upgrade shipped*
