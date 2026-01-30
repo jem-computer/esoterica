@@ -5,22 +5,22 @@
 See: .planning/PROJECT.md (updated 2026-01-28)
 
 **Core value:** Agents can draw and interpret tarot cards as a perspective-shifting tool
-**Current focus:** v1.4 Website Upgrade -- Phase 20 complete, ready for Phase 21
+**Current focus:** v1.4 Website Upgrade -- Phase 21 complete, ready for Phase 22
 
 ## Current Position
 
 Milestone: v1.4 Website Upgrade
-Phase: 20 of 22 (Mobile + Accessibility)
-Plan: 02 of 02 (Scroll Hint)
+Phase: 21 of 22 (Gateway Illustrations)
+Plan: 02 of 02 (Illustration Integration)
 Status: Phase complete
-Last activity: 2026-01-28 -- Completed 20-02-PLAN.md
+Last activity: 2026-01-29 -- Completed 21-02-PLAN.md
 
-Progress: [===================.] 91% (20/22 phases complete; 34 plans shipped)
+Progress: [====================] 95% (21/22 phases complete; 36 plans shipped)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 34 (5 v1.0 + 5 v1.1 + 12 v1.2 + 8 v1.3 + 4 v1.4)
+- Total plans completed: 36 (5 v1.0 + 5 v1.1 + 12 v1.2 + 8 v1.3 + 6 v1.4)
 - Average duration (v1.1): 2.4 min
 - Average duration (v1.2): 7.6 min
 - Average duration (v1.3): 2.0 min
@@ -44,6 +44,7 @@ Progress: [===================.] 91% (20/22 phases complete; 34 plans shipped)
 | Phase 18 (Wizard Enhancement) | 2 | ~3.7 min | ~1.9 min |
 | Phase 19 (Scroll Video) | 2 | ~10 min | ~5 min |
 | Phase 20 (Mobile + A11y) | 2 | ~4 min | ~2 min |
+| Phase 21 (Illustrations) | 2 | ~3 hrs | ~1.5 hrs |
 
 ## Accumulated Context
 
@@ -79,6 +80,15 @@ All decisions logged in PROJECT.md Key Decisions table.
 - JS fades hint at >20% scroll progress, restores CSS animation on scroll-back
 - display: none in reduced-motion media query
 
+**Phase 21 Gateway Illustrations:**
+- Nano Banana Pro via Replicate API for line art generation (60+ variations)
+- Custom stamp-filter.mjs replicates Photoshop Stamp filter (sharp: grayscale → blur → threshold)
+- User style suffix: "fineliner line art, heavy stippling texture, imperfect, rough drawings..."
+- CSS breakout layout: margin-left 50% + translateX(-50%) pattern
+- Dark mode: filter invert(1) on img only (not caption)
+- IntersectionObserver scroll reveal with threshold 0.15, rootMargin -50px
+- Archive saved to ~/Pictures/esoterica-illustrations-archive/
+
 ### Pending Todos
 
 - [ ] Debug Chrome scroll animation lag (works fine in Safari)
@@ -95,14 +105,13 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-01-28
-Stopped at: Completed 20-02-PLAN.md (Phase 20 complete)
+Last session: 2026-01-29
+Stopped at: Completed 21-02-PLAN.md (Phase 21 complete)
 Resume file: None
 
 ## Next Steps
 
-1. Execute Phase 21 (Illustrations)
-2. Execute Phase 22 (Final Polish)
+1. Execute Phase 22 (Footer + Polish)
 
 ---
-*Last updated: 2026-01-28 -- Phase 20 complete (both plans shipped)*
+*Last updated: 2026-01-29 -- Phase 21 complete (both plans shipped)*

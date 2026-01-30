@@ -70,7 +70,7 @@ See: `.planning/milestones/v1.3-ROADMAP.md` for full details.
 
 - [x] **Phase 19: Scroll Video** - Scroll-driven video hero with `<video>` element currentTime mapping
 - [x] **Phase 20: Mobile + Accessibility** - Mobile fallback, reduced-motion support, scroll hint
-- [ ] **Phase 21: Gateway Illustrations** - Illustration prompts, integration, hybrid layout
+- [x] **Phase 21: Gateway Illustrations** - Illustration prompts, integration, hybrid layout
 - [ ] **Phase 22: Footer + Polish** - Site footer, loading states, Lighthouse audit
 
 ## Phase Details
@@ -116,8 +116,8 @@ Plans:
   4. Illustrations fade in on scroll using Intersection Observer
 **Plans:** 2 plans
 Plans:
-- [ ] 21-01-PLAN.md -- Generate three Gateway Process-style line art illustrations via Nano Banana Pro
-- [ ] 21-02-PLAN.md -- Integrate illustrations into page with CSS breakout, theme filter, scroll reveal
+- [x] 21-01-PLAN.md -- Generate three Gateway Process-style line art illustrations via Nano Banana Pro
+- [x] 21-02-PLAN.md -- Integrate illustrations into page with CSS breakout, theme filter, scroll reveal
 
 ### Phase 22: Footer + Polish
 **Goal**: The site has a complete footer and passes quality benchmarks
@@ -136,9 +136,9 @@ Plans:
 |-------------|-------------|-------|--------|
 | WEB-01 | Scroll-scrubbed hero video | Phase 19, extended by Phase 20 | Complete |
 | WEB-02 | Compress and integrate AI-generated hero video | Phase 19 | Complete |
-| WEB-03 | Gateway Process-style illustrations | Phase 21 | Pending |
-| WEB-04 | Illustration prompt generation for Nano Banana Pro | Phase 21 | Pending |
-| WEB-05 | Page layout for illustrations | Phase 21 | Pending |
+| WEB-03 | Gateway Process-style illustrations | Phase 21 | Complete |
+| WEB-04 | Illustration prompt generation for Nano Banana Pro | Phase 21 | Complete |
+| WEB-05 | Page layout for illustrations | Phase 21 | Complete |
 | WEB-06 | Footer with copyright and links | Phase 22 | Pending |
 
 Coverage: 6/6 requirements mapped.
@@ -171,9 +171,9 @@ Coverage: 6/6 requirements mapped.
 | 18. Wizard Enhancement | v1.3 | 2/2 | Complete | 2026-01-26 |
 | 19. Scroll Video | v1.4 | 2/2 | Complete | 2026-01-28 |
 | 20. Mobile + Accessibility | v1.4 | 2/2 | Complete | 2026-01-28 |
-| 21. Gateway Illustrations | v1.4 | 0/2 | Not started | - |
+| 21. Gateway Illustrations | v1.4 | 2/2 | Complete | 2026-01-29 |
 | 22. Footer + Polish | v1.4 | 0/TBD | Not started | - |
 
 ---
 *Roadmap created: 2026-01-22*
-*Last updated: 2026-01-28 -- Phase 20 complete (mobile + accessibility)*
+*Last updated: 2026-01-29 -- Phase 21 complete (gateway illustrations)*
