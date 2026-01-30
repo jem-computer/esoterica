@@ -445,23 +445,23 @@ Footer:
 ## MVP Recommendations
 
 ### Must Have (Table Stakes)
-1. ✅ Scroll-scrubbed video hero with 1:1 scroll mapping
-2. ✅ Video encoded with high keyframe frequency (2 frame interval)
-3. ✅ Static fallback image for mobile
-4. ✅ `prefers-reduced-motion` support (show static frame)
-5. ✅ Hero text overlay (existing tagline/description)
-6. ✅ 3-6 SVG illustrations (Gateway Process style)
-7. ✅ Theme-aware illustration styling (dark/light mode)
-8. ✅ Layout choice: hybrid (prose-interspersed + grid)
-9. ✅ Footer with links/info
+1. Scroll-scrubbed video hero with 1:1 scroll mapping
+2. Video encoded with high keyframe frequency (2 frame interval)
+3. Static fallback image for mobile
+4. `prefers-reduced-motion` support (show static frame)
+5. Hero text overlay (existing tagline/description)
+6. 3-6 SVG illustrations (Gateway Process style)
+7. Theme-aware illustration styling (dark/light mode)
+8. Layout choice: hybrid (prose-interspersed + grid)
+9. Footer with links/info
 
 ### Should Have (High Polish)
-1. ✅ Scroll hint/chevron ("scroll to explore")
-2. ✅ Text overlay synchronized fade with video
-3. ✅ Lazy load video (only load when near viewport)
-4. ✅ WebM + MP4 fallbacks for browser compatibility
-5. ✅ Scroll-triggered fade-in for illustrations
-6. ✅ Intersection Observer for performance
+1. Scroll hint/chevron ("scroll to explore")
+2. Text overlay synchronized fade with video
+3. Lazy load video (only load when near viewport)
+4. WebM + MP4 fallbacks for browser compatibility
+5. Scroll-triggered fade-in for illustrations
+6. Intersection Observer for performance
 
 ### Could Have (Nice Polish)
 1. Optional: Staggered animation for illustration grid
@@ -470,13 +470,13 @@ Footer:
 4. Optional: Easing on video scrub (smooth frame transitions)
 
 ### Won't Have (Anti-Features)
-1. ❌ Hijacked scroll or custom scroll physics
-2. ❌ Horizontal scroll sections
-3. ❌ Audio with video
-4. ❌ Multiple scroll-driven videos
-5. ❌ Excessive animation (parallax on everything)
-6. ❌ Complex multi-step video sequences
-7. ❌ Decorative illustrations without purpose
+1. Hijacked scroll or custom scroll physics
+2. Horizontal scroll sections
+3. Audio with video
+4. Multiple scroll-driven videos
+5. Excessive animation (parallax on everything)
+6. Complex multi-step video sequences
+7. Decorative illustrations without purpose
 
 ## Roadmap Implications
 
@@ -596,3 +596,226 @@ Footer:
 **Overall confidence:** HIGH
 
 All technical specifications verified with authoritative sources (MDN, Chrome Developers, W3C). Implementation patterns drawn from current 2026 documentation and case studies. Mobile performance guidance is general (MEDIUM confidence) and will require project-specific testing, but fallback strategies are well-established.
+
+---
+
+# Feature Landscape: Terminal Demo Widget
+
+**Domain:** Terminal demo widget for product landing page
+**Researched:** 2026-01-30
+**Confidence:** MEDIUM (WebSearch verified against multiple sources, no Context7 for this domain)
+
+## Executive Summary
+
+Terminal demo widgets succeed when they create the *feeling* of witnessing real software in action without the friction of actual interaction. The most effective demos share three qualities: **visual authenticity** (looks like a real terminal), **temporal pacing** (typewriter effects that feel human), and **narrative structure** (clear beginning, middle, end).
+
+For scroll-triggered demos specifically, the key insight is that scroll position becomes a "playhead" - users control pacing by scrolling, which creates engagement through agency. The worst mistake is hijacking scroll behavior or making users wait for animations to complete before they can continue.
+
+The four-phase narrative (ask question, pull cards, get interpretation, integrate learnings) maps well to scroll-triggered phases. Each phase should be a discrete "scene" that completes as the user scrolls through its range.
+
+## Table Stakes (Demo Widget)
+
+Features users expect. Missing = demo feels broken or amateurish.
+
+| Feature | Why Expected | Complexity | Notes |
+|---------|--------------|------------|-------|
+| **Terminal visual frame** | Users need to recognize "this is a CLI" instantly | Low | Chrome (title bar, window buttons), monospace font, dark background. Claude Code aesthetic: warm parchment tones possible. |
+| **Blinking cursor** | Universal signifier of "awaiting input" or "typing in progress" | Low | CSS animation, 530ms blink rate is standard. Hide during active typing, show at rest. |
+| **Typewriter text reveal** | Creates temporal pacing, suggests "live" operation | Medium | Character-by-character reveal. Uniform speed is acceptable but feels robotic. |
+| **Prompt indicator** | Shows command vs output distinction | Low | `$` or `>` for user input, different styling for output. Claude Code uses distinct styling for agent messages. |
+| **Scroll-to-phase mapping** | Core interaction model for this widget | Medium | Scroll position maps to demo phases. Phase 1: 0-25%, Phase 2: 25-50%, etc. |
+| **Phase persistence** | Scrolling up should show previous state, not re-animate | Medium | Once a phase completes, it stays completed. Scroll up = see static completed state. |
+| **prefers-reduced-motion support** | Accessibility requirement | Low | Users with motion sensitivity get instant text (no typewriter), static states. Required by WCAG. |
+
+## Differentiators (Demo Widget)
+
+Features that make the demo memorable and effective.
+
+| Feature | Value Proposition | Complexity | Notes |
+|---------|-------------------|------------|-------|
+| **Variable typing speed** | Feels genuinely human, not robotic | Medium | Motion library does this automatically: slower for long words, pauses at punctuation, variation between characters. ~1.3kb React component available. |
+| **Phase-specific timing** | Different content types feel different | Medium | User questions type fast (confident). Card pulls have dramatic pause. Interpretations type slower (thoughtful). |
+| **Semantic content blocks** | Content isn't just text, it has structure | Medium | User prompt styled differently from agent response. Card names could have distinct styling. |
+| **Scroll progress indicator** | Shows user where they are in the narrative | Low | Subtle bar or dots showing 4 phases, current phase highlighted. |
+| **"Skip to end" escape hatch** | Respects impatient users | Low | Small "skip" button or keyboard shortcut (spacebar?) to complete current phase instantly. |
+| **Smooth phase transitions** | Phases don't jump, they flow | Medium | Brief fade or slide between phases rather than hard cuts. |
+| **Ambient terminal effects** | Adds atmosphere without distraction | Low-Medium | Subtle scan lines, very slight color variation. NOT CRT warping or heavy effects. |
+| **Card reveal moment** | The "pull" feels special | Medium | When cards are drawn, brief visual emphasis - perhaps a subtle glow or the card names appearing with slightly different timing. |
+| **Claude Code visual authenticity** | Looks like the actual product | Medium | Match Claude Code's status bar, message styling, color palette. The "warm, analog-inspired" aesthetic with parchment tones. |
+
+## Anti-Features (Demo Widget)
+
+Features to explicitly NOT build. Common mistakes in this domain.
+
+| Anti-Feature | Why Avoid | What to Do Instead |
+|--------------|-----------|-------------------|
+| **Scroll hijacking** | "Please oh please don't hijack the scrolling like the black trash can Mac Pro page did." Users hate losing scroll control. | Scroll should always respond normally. Animations trigger at positions, but scroll continues smoothly. Never lock scroll waiting for animation. |
+| **Interactive input** | Fake interactivity creates confusion and disappointment | Demo is purely observational. No fake input fields. It's a recording, not a simulation. |
+| **Sound effects** | Startles users, accessibility nightmare, feels gimmicky | Visual-only. If audio is ever added, must be opt-in with clear control. |
+| **Heavy CRT/retro effects** | Distracts from content, dated aesthetic, performance cost | Subtle at most. This isn't a nostalgia piece - it's a product demo. |
+| **Auto-advancing phases** | Removes user agency, forces pace | User controls pace via scroll. Never auto-advance to next phase. |
+| **Loading states between phases** | Breaks immersion, suggests slow software | Pre-render all content. No spinners, no "loading..." text. |
+| **Replay button** | Adds complexity, rarely used, implies demo is finished | Scroll up to see previous phases. Natural scroll behavior is the replay mechanism. |
+| **Actual terminal functionality** | Massive scope creep, security concerns | This is a recording/animation, not a shell. Don't try to make it "real." |
+| **Text that can be selected/copied** | Creates confusion about what's real | Text in demo is presentational. Keep actual install command separate (already exists in hero). |
+| **Mobile-only simplification** | Mobile users deserve the demo too | Scale down gracefully. Smaller font, same content. Touch scroll works same as mouse scroll. |
+
+## Best Practices (Demo Widget)
+
+UX patterns verified across multiple sources for terminal simulations.
+
+### Scroll Behavior
+
+1. **Scroll position is the timeline.** Map scroll percentage to demo progress. User scrolls = demo advances.
+
+2. **Phases are sticky.** Each phase occupies a scroll range. Within that range, the phase plays. Scrolling past = phase complete and static.
+
+3. **Bi-directional works.** Scrolling up shows completed previous phases in their final state. Don't re-animate on reverse scroll.
+
+4. **Performance matters.** Use CSS scroll-driven animations where possible (Chrome 145+ supports these natively). For broader support, IntersectionObserver + requestAnimationFrame. Avoid scroll event listeners on main thread.
+
+### Typewriter Implementation
+
+1. **Character-by-character** feels more authentic than word-by-word.
+
+2. **Variable timing** creates human feel:
+   - Base: 30-50ms per character
+   - Punctuation: +100-200ms pause after
+   - Word boundaries: slight pause
+   - Long words: slight slowdown mid-word
+
+3. **Cursor behavior:**
+   - Visible and blinking when "idle"
+   - Hidden or solid when "typing"
+   - Returns to blinking after line completes
+
+4. **Output vs input distinction:**
+   - Input lines type character-by-character
+   - Output can appear line-by-line or in blocks (faster pacing)
+
+### Accessibility (Demo Widget)
+
+1. **prefers-reduced-motion: reduce**
+   - Disable all typewriter effects
+   - Show text instantly
+   - Scroll still controls phase, but no animation
+   - "Reduce" means reduce, not remove - subtle fades okay
+
+2. **Screen reader considerations:**
+   - Demo content should be in DOM for screen readers
+   - Use aria-live regions carefully (probably "polite", not "assertive")
+   - Consider a static alternative summary
+
+3. **Keyboard navigation:**
+   - Scroll with keyboard (arrow keys, Page Up/Down) should work
+   - Consider spacebar to skip current phase
+
+### Visual Design (Demo Widget)
+
+1. **Claude Code authenticity matters.** Match the actual product:
+   - Monospace font (likely SF Mono or similar)
+   - Warm, parchment-toned palette
+   - Status bar with model/cost info (can be static/fake)
+   - Message bubbles with distinct styling for user/agent
+
+2. **Terminal chrome is optional.** A floating terminal window with title bar is classic but not required. The content styling alone can convey "terminal."
+
+3. **Contrast with page.** Demo should stand out from surrounding content. Dark terminal on light page (or vice versa) creates clear boundary.
+
+### Content Structure (Demo Widget)
+
+For the four-phase narrative:
+
+**Phase 1: Ask a question**
+- User prompt appears with typewriter
+- Brief, clear question about a real problem
+- ~50-80 characters
+
+**Phase 2: Pull cards**
+- Agent acknowledges and draws
+- Card names appear (could have special emphasis)
+- Natural pause after draw completes
+
+**Phase 3: Get interpretation**
+- Longer text block
+- Can reveal paragraph-by-paragraph rather than all at once
+- This is the "meat" - worth spending scroll distance on
+
+**Phase 4: Integrate learnings**
+- Brief closing from agent
+- Clear "complete" state
+- Natural endpoint before user scrolls to next page section
+
+### Performance Budget (Demo Widget)
+
+- **Initial load:** Demo content should be in HTML, not loaded async
+- **Animation:** CSS-driven where possible, JS only for typewriter sequencing
+- **Memory:** Pre-calculate all text content, don't generate on scroll
+- **Scroll handler:** Debounced or throttled, ideally using IntersectionObserver
+
+## Recommendations for Esoterica Demo Widget
+
+Based on research, prioritized feature list:
+
+**Must Have (Table Stakes):**
+1. Terminal visual frame with Claude Code aesthetic
+2. Blinking cursor
+3. Typewriter text reveal
+4. Scroll-to-phase mapping for 4 phases
+5. prefers-reduced-motion support
+
+**Should Have (High-Value Differentiators):**
+1. Variable typing speed (use Motion library or similar)
+2. Phase-specific timing (faster questions, slower interpretations)
+3. Claude Code visual authenticity (status bar, message styling)
+4. Phase persistence on scroll-up
+
+**Nice to Have (If Time Permits):**
+1. Scroll progress indicator
+2. Skip-to-end button
+3. Subtle card reveal moment
+
+**Explicitly Skip:**
+- Interactive input
+- Sound effects
+- Heavy visual effects
+- Replay functionality
+
+## Sources (Demo Widget)
+
+### Terminal Demo Implementation
+- [DEV Community: Terminal Simulation in Browser](https://dev.to/ehlo_250/how-to-create-a-terminal-simulation-in-the-browser-3l54)
+- [ITNEXT: Interactive Terminal Website with JavaScript](https://itnext.io/how-to-create-interactive-terminal-like-website-888bb0972288)
+- [GitHub: fake-terminal-website](https://github.com/luisbraganca/fake-terminal-website)
+- [GitHub: terminal-landing-page](https://github.com/bradtraversy/terminal-landing-page)
+
+### Typewriter Effects
+- [CSS-Tricks: Typewriter Effect](https://css-tricks.com/snippets/css/typewriter-effect/)
+- [W3Schools: Typing Effect Tutorial](https://www.w3schools.com/howto/howto_js_typewriter.asp)
+- [Motion: React Typewriter Component](https://motion.dev/docs/react-typewriter) - 1.3kb, variable speed, designed for scroll-triggered
+- [FreeFrontend: CSS Typing Text Effects](https://freefrontend.com/css-typing-text/)
+
+### Scroll-Triggered Animations
+- [Chrome Developers: Scroll-Triggered Animations](https://developer.chrome.com/blog/scroll-triggered-animations) - New CSS API in Chrome 145
+- [scroll-driven-animations.style](https://scroll-driven-animations.style/) - Demos and tools
+- [Bram.us: CSS Scroll-Triggered Animations](https://www.bram.us/2025/12/12/css-scroll-triggered-animations-are-coming-to-chrome/)
+- [Motion: React Scroll Animations](https://motion.dev/docs/react-scroll-animations)
+- [Chrome Developers: Scroll Animation Performance](https://developer.chrome.com/blog/scroll-animation-performance-case-study)
+
+### Animation Best Practices & Anti-Patterns
+- [Vev: Website Scroll Animation 101](https://www.vev.design/blog/website-scroll-animation/)
+- [CSS-Tricks: Apple-Style Scroll Animations](https://css-tricks.com/lets-make-one-of-those-fancy-scrolling-animations-used-on-apple-product-pages/)
+- [Vev: Landing Page Animation 101](https://www.vev.design/blog/landing-page-animation/)
+
+### Accessibility
+- [MDN: prefers-reduced-motion](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion)
+- [web.dev: prefers-reduced-motion](https://web.dev/articles/prefers-reduced-motion)
+- [Tatiana Mac: No-Motion-First Approach](https://www.tatianamac.com/posts/prefers-reduced-motion)
+- [Pope Tech: Accessible Animation Design](https://blog.pope.tech/2025/12/08/design-accessible-animation-and-movement/)
+- [W3C WAI: Animation Accessibility](https://www.w3.org/WAI/tutorials/carousels/animations/)
+
+### Claude Code Interface
+- [Claude Code Docs: Terminal Config](https://code.claude.com/docs/en/terminal-config)
+- [Claude Code Product Page](https://claude.com/product/claude-code)
+- [Prototypr: Claude Code CLI UI](https://prototypr.io/post/claude-code-cli-ui)
+- [Medium: Claude Code Internals - Terminal UI](https://kotrotsos.medium.com/claude-code-internals-part-11-terminal-ui-542fe17db016)
