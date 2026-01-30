@@ -9,9 +9,9 @@ Requirements for the demo widget milestone. Core features only.
 
 ### Terminal Foundation
 
-- [ ] **TERM-01**: Terminal visual frame with dark background and monospace font
-- [ ] **TERM-02**: Blinking cursor that shows typing activity
-- [ ] **TERM-03**: Sticky terminal container that stays in view during scroll
+- [x] **TERM-01**: Terminal visual frame with dark background and monospace font
+- [x] **TERM-02**: Blinking cursor that shows typing activity
+- [x] **TERM-03**: Sticky terminal container that stays in view during scroll
 
 ### Scroll Phases
 
@@ -28,7 +28,7 @@ Requirements for the demo widget milestone. Core features only.
 ### Accessibility
 
 - [ ] **A11Y-01**: `prefers-reduced-motion` check shows all content instantly
-- [ ] **A11Y-02**: Full text in DOM from start (screen reader accessible)
+- [x] **A11Y-02**: Full text in DOM from start (screen reader accessible)
 
 ### Content
 
@@ -71,10 +71,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| TERM-01 | Phase 23 | Pending |
-| TERM-02 | Phase 23 | Pending |
-| TERM-03 | Phase 23 | Pending |
-| A11Y-02 | Phase 23 | Pending |
+| TERM-01 | Phase 23 | Complete |
+| TERM-02 | Phase 23 | Complete |
+| TERM-03 | Phase 23 | Complete |
+| A11Y-02 | Phase 23 | Complete |
 | SCRL-01 | Phase 24 | Pending |
 | SCRL-02 | Phase 24 | Pending |
 | SCRL-03 | Phase 24 | Pending |
@@ -94,4 +94,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-01-30*
-*Last updated: 2026-01-30 -- Traceability completed*
+*Last updated: 2026-01-30 -- Phase 23 requirements complete*

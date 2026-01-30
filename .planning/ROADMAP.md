@@ -85,13 +85,13 @@ See: `.planning/milestones/v1.5-ROADMAP.md` for full details.
 
 3 phases, ~5 plans, 15 requirements:
 
-### Phase 23: Terminal Foundation
+### Phase 23: Terminal Foundation ✓
 - **Goal:** A static terminal container exists on the page with all demo text in the DOM
 - **Plans:** 1 plan
 - **Requirements:** TERM-01, TERM-02, TERM-03, A11Y-02
 
 Plans:
-- [ ] 23-01-PLAN.md — Terminal component with CSS effects, sticky scroll, DOM text
+- [x] 23-01-PLAN.md — Terminal component with CSS effects, sticky scroll, DOM text
 
 ### Phase 24: Animation Engine
 - **Goal:** Scrolling through demo section triggers phase transitions with typewriter text reveal
@@ -135,10 +135,10 @@ Plans:
 | 20. Mobile + Accessibility | v1.4 | 2/2 | Complete | 2026-01-28 |
 | 21. Gateway Illustrations | v1.4 | 2/2 | Complete | 2026-01-29 |
 | 22. Footer + Polish | v1.4 | 2/2 | Complete | 2026-01-29 |
-| 23. Terminal Foundation | v1.5 | 0/1 | Planned | - |
+| 23. Terminal Foundation | v1.5 | 1/1 | Complete | 2026-01-30 |
 | 24. Animation Engine | v1.5 | 0/? | Pending | - |
 | 25. Content + Accessibility | v1.5 | 0/? | Pending | - |
 
 ---
 *Roadmap created: 2026-01-22*
-*Last updated: 2026-01-30 -- Phase 23 planned (1 plan)*
+*Last updated: 2026-01-30 -- Phase 23 complete*
