@@ -44,6 +44,7 @@ All decisions logged in PROJECT.md Key Decisions table.
 
 ### Pending Todos
 
+- [ ] Add demo widget with terminal simulation (2026-01-30)
 - [ ] Let users save readings to file (future candidate)
 - [ ] Debug ugly argument parsing in Skill
 - [ ] Explore subagent benefits for tarot skill
