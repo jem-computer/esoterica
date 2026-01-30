@@ -1,4 +1,25 @@
 (function() {
+  // Loading state: hide poster once video is ready for seeking
+  function hidePoster() {
+    const poster = document.querySelector('.hero-bg-poster');
+    if (poster) {
+      poster.style.display = 'none';
+    }
+  }
+
+  // Set up poster hiding (runs for all users, including reduced-motion)
+  const videoForPoster = document.getElementById('scroll-video');
+  if (videoForPoster) {
+    videoForPoster.addEventListener('canplaythrough', hidePoster, { once: true });
+
+    // Fallback timeout for Safari iOS edge case
+    setTimeout(function() {
+      if (videoForPoster.readyState >= HTMLMediaElement.HAVE_ENOUGH_DATA) {
+        hidePoster();
+      }
+    }, 3000);
+  }
+
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   if (prefersReducedMotion.matches) {
     const vid = document.getElementById('scroll-video');
