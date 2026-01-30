@@ -298,6 +298,7 @@ body {
 .prose {
   background: var(--bg-page, #FAF9F6);
   padding: 5rem 2rem;
+  overflow-x: clip;
 }
 
 [data-theme="light"] {
@@ -346,6 +347,50 @@ body {
   font-style: italic;
 }
 
+/* ===== ILLUSTRATIONS ===== */
+.illustration {
+  /* Breakout from 38rem prose column */
+  width: 100vw;
+  max-width: 65rem;
+  margin-left: 50%;
+  padding: 3rem 0;
+  text-align: center;
+
+  /* Scroll reveal: hidden state (combines breakout centering + slide up) */
+  opacity: 0;
+  transform: translateX(-50%) translateY(2rem);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Scroll reveal: visible state */
+.illustration.is-visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.illustration img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Theme adaptation: invert line art for dark mode (target img only, not caption) */
+[data-theme="dark"] .illustration img {
+  filter: invert(1);
+}
+
+/* Caption styling */
+.illustration figcaption {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--text-prose-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 1rem;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 640px) {
   .header {
@@ -366,6 +411,11 @@ body {
 
   .install code {
     font-size: 0.875rem;
+  }
+
+  .illustration {
+    width: calc(100vw - 2rem);
+    padding: 2rem 0;
   }
 }
 
@@ -403,5 +453,11 @@ body {
 
   .scroll-hint {
     display: none;
+  }
+
+  .illustration {
+    opacity: 1 !important;
+    transform: translateX(-50%) !important;
+    transition: none !important;
   }
 }
