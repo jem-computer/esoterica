@@ -95,8 +95,11 @@ Plans:
 
 ### Phase 24: Animation Engine
 - **Goal:** Scrolling through demo section triggers phase transitions with typewriter text reveal
-- **Plans:** TBD
+- **Plans:** 1 plan
 - **Requirements:** SCRL-01, SCRL-02, SCRL-03, TYPE-01, TYPE-02, TYPE-03
+
+Plans:
+- [ ] 24-01-PLAN.md — Phase detection with IntersectionObserver + typewriter animation
 
 ### Phase 25: Content + Accessibility
 - **Goal:** Demo displays compelling content and works for all users
@@ -136,9 +139,9 @@ Plans:
 | 21. Gateway Illustrations | v1.4 | 2/2 | Complete | 2026-01-29 |
 | 22. Footer + Polish | v1.4 | 2/2 | Complete | 2026-01-29 |
 | 23. Terminal Foundation | v1.5 | 1/1 | Complete | 2026-01-30 |
-| 24. Animation Engine | v1.5 | 0/? | Pending | - |
+| 24. Animation Engine | v1.5 | 0/1 | Pending | - |
 | 25. Content + Accessibility | v1.5 | 0/? | Pending | - |
 
 ---
 *Roadmap created: 2026-01-22*
-*Last updated: 2026-01-30 -- Phase 23 complete*
+*Last updated: 2026-01-30 -- Phase 24 planned*
