@@ -13,7 +13,7 @@ Milestone: v1.5 Demo Widget
 Phase: 24 - Animation Engine (complete)
 Plan: 1/1 complete
 Status: Ready for Phase 25
-Last activity: 2026-02-02 -- Completed quick task 004: Add three witchy skills
+Last activity: 2026-02-02 -- Completed quick task 005: Update install script for multi-skill installation
 
 Progress: [=============       ] 67% (2/3 phases)
 
@@ -73,11 +73,12 @@ None.
 |---|-------------|------|--------|-----------|
 | 003 | LinkedIn carousel posts with witchy voice | 2026-01-29 | ee5383f | [003-linkedin-carousel-posts](./quick/003-linkedin-carousel-posts/) |
 | 004 | Add five witchy skills (micro-ritual, sacred-blessing, romantical, correspondence, incantation) | 2026-02-02 | 16dd52b | [004-add-three-witchy-skills](./quick/004-add-three-witchy-skills/) |
+| 005 | Update install script to install all 6 skills | 2026-02-02 | e887c74 | [005-update-the-install-script-so-it-uses-all](./quick/005-update-the-install-script-so-it-uses-all/) |
 
 ## Session Continuity
 
-Last session: 2026-01-30
-Stopped at: Completed 24-01-PLAN.md
+Last session: 2026-02-02
+Stopped at: Completed quick task 005
 Resume file: None
 
 ## Next Steps
@@ -87,4 +88,4 @@ Resume file: None
 3. Deploy and verify live site
 
 ---
-*Last updated: 2026-02-02 -- Completed quick task 004: Add three witchy skills*
+*Last updated: 2026-02-02 -- Completed quick task 005: Update install script for multi-skill installation*
