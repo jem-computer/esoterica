@@ -153,6 +153,23 @@ Esoterica bridges ancient symbolic systems and modern AI agents because both dea
 
 ---
 
+## The Toolkit
+
+Tarot is the flagship, but Esoterica offers more ways to weave meaning into your work. Each skill works for humans and agents alike.
+
+| Skill | What it does |
+|-------|--------------|
+| `/tarot` | Draw cards, interpret archetypes, shift perspective |
+| `/micro-ritual` | Design simple embodied rituals for life moments — no special tools required |
+| `/sacred-blessing` | Generate personalized blessings with Hebrew Priestess resonance |
+| `/romantical` | Transform your calendar into a narrative of intention |
+| `/correspondence` | Find the symbolic vocabulary for any intention — herbs, colors, stones, times |
+| `/incantation` | Forge single-sentence power phrases for action, not affirmation |
+
+These aren't productivity hacks dressed in crystals. They're attention technologies — ways of marking and meaning-making that have worked for millennia, now available in your terminal.
+
+---
+
 ## The Deck
 
 **Major Arcana (22 cards):** The Fool through The World — the archetypal journey.
