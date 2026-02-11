@@ -1,0 +1,16 @@
+# Development files
+.claude/
+.claude-plugin/
+.playwright-mcp/
+demo/
+scripts/
+
+# Dependencies
+node_modules/
+**/node_modules/
+package-lock.json
+**/package-lock.json
+
+# System files
+.DS_Store
+**/.DS_Store

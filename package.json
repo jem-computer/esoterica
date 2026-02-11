@@ -8,7 +8,12 @@
   },
   "files": [
     "bin/",
-    "skills/",
+    "skills/tarot/",
+    "skills/micro-ritual/",
+    "skills/sacred-blessing/",
+    "skills/romantical/",
+    "skills/correspondence/",
+    "skills/incantation/",
     "README.md",
     "LICENSE"
   ],
